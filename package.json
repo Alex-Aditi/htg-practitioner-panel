@@ -1,0 +1,11 @@
+{
+  "name": "htg-practitioner-panel",
+  "version": "0.0.1",
+  "description": "",
+  "main": "/src/static/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Georgia Alexandra Heggie & Aditi Ohri",
+  "license": "AGPL-3.0-only"
+}
