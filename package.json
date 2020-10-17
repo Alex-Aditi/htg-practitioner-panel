@@ -8,7 +8,8 @@
     "dev": "parcel src/static/index.html",
     "build": "parcel build src/static/index.html",
     "cleardev": "npm run clear && npm run dev",
-    "clearbuild": "npm run clear && npm run build"
+    "clearbuild": "npm run clear && npm run build",
+    "deploy:h": "firebase deploy --only hosting:htv-dev-practitioner"
   },
   "author": "Georgia Alexandra Heggie & Aditi Ohri",
   "license": "AGPL-3.0-only",
