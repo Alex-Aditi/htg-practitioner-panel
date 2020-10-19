@@ -1,4 +1,5 @@
 import { Button, makeStyles } from "@material-ui/core";
+import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon';
 import React from "react";
 
 // this is a test to make sure local styling works on build - it can be removed
@@ -17,6 +18,7 @@ const App = () => {
       {/* all these Buttons are tests to make sure material-ui builds and styles correctly - they can be removed */}
       <Button>THIS IS A STANDARD BUTTON</Button>
       <Button color="secondary">
+        <InsertEmoticonIcon />
         THIS IS A THEMED BUTTON USING SECONDARY COLOR STYLE FROM src/js/theme.js
       </Button>
       <Button className={classes.borderButton}>
