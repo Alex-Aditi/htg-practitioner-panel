@@ -7,3 +7,6 @@
 #for parcel
 /dist
 /.cache
+
+#firebase caches some things here
+/.firebase
