@@ -52,14 +52,15 @@ theme.overrides = {
   },
   MuiLink: {
     underlineAlways: {
-      textDecorationColor: theme.palette.secondary.light,
-      textDecorationStyle: 'double',
+      textDecorationColor: 'transparent',
+      borderBottomColor: theme.palette.secondary.light,
+      borderBottom: '.2rem solid',
       '&:hover': {
-        backgroundColor: '#ffe17e',
+        backgroundColor: theme.palette.secondary.light,
         textDecorationColor: theme.palette.secondary.light,
       },
       '&:focus': {
-        backgroundColor: '#ffe17e',
+        backgroundColor: theme.palette.secondary.light,
         textDecorationColor: theme.palette.secondary.light,
       },
     }
