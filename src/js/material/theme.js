@@ -20,6 +20,10 @@ theme.props = {
   MuiButton: {
     disableElevation: true,
     variant: 'contained'
+  },
+  MuiLink: {
+    color: 'textPrimary',
+    underline: 'always',
   }
 };
 
@@ -36,15 +40,29 @@ theme.overrides = {
       borderColor: theme.palette.primary.light,
       '&:hover': {
         backgroundColor: '#d0b2ef'
-      }
+      },
     },
     containedSecondary: {
       backgroundColor: theme.palette.secondary.main,
       borderColor: theme.palette.secondary.dark,
       '&:hover': {
         backgroundColor: '#e9c03c'
-      }
+      },
     },
+  },
+  MuiLink: {
+    underlineAlways: {
+      textDecorationColor: theme.palette.secondary.light,
+      textDecorationStyle: 'double',
+      '&:hover': {
+        backgroundColor: '#ffe17e',
+        textDecorationColor: theme.palette.secondary.light,
+      },
+      '&:focus': {
+        backgroundColor: '#ffe17e',
+        textDecorationColor: theme.palette.secondary.light,
+      },
+    }
   }
 };
 

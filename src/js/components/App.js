@@ -1,6 +1,7 @@
-import { Button, makeStyles } from "@material-ui/core";
-import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon';
 import React from "react";
+import { Button, makeStyles, Link, Typography } from "@material-ui/core";
+import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon';
+
 
 // this is a test to make sure local styling works on build - it can be removed
 //also i dont know if this exact syntax is the best practice for local styling in material-ui I just borrowed it from a quick tutorial for the test
@@ -14,7 +15,9 @@ const App = () => {
   const classes = useStyles();
   return (
     <div>
-      <p>rendering!</p>
+      <Typography>
+      <Link href="#">This is a link!</Link>
+      </Typography>
       {/* all these Buttons are tests to make sure material-ui builds and styles correctly - they can be removed */}
       <Button>THIS IS A STANDARD BUTTON</Button>
       <Button color="primary">
