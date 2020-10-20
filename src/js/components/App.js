@@ -17,6 +17,9 @@ const App = () => {
       <p>rendering!</p>
       {/* all these Buttons are tests to make sure material-ui builds and styles correctly - they can be removed */}
       <Button>THIS IS A STANDARD BUTTON</Button>
+      <Button color="primary">
+        THIS IS A THEMED BUTTON USING PRIMARY COLOR STYLE FROM src/js/theme.js
+      </Button>
       <Button color="secondary">
         <InsertEmoticonIcon />
         THIS IS A THEMED BUTTON USING SECONDARY COLOR STYLE FROM src/js/theme.js
