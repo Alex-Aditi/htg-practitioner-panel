@@ -1,4 +1,5 @@
 import { createMuiTheme } from "@material-ui/core";
+import { Autorenew, FullscreenExit, GpsFixed } from "@material-ui/icons";
 
 const theme = createMuiTheme({
   palette: {
@@ -24,6 +25,13 @@ theme.props = {
   MuiLink: {
     color: 'textPrimary',
     underline: 'always',
+  },
+  MuiAppBar: {
+    position: 'fixed',
+    elevation: 0,
+  },
+  MuiToolBar: {
+    disableGutters: true
   }
 };
 
@@ -63,6 +71,15 @@ theme.overrides = {
         backgroundColor: theme.palette.secondary.light,
         textDecorationColor: theme.palette.secondary.light,
       },
+    }
+  },
+  MuiAppBar: {
+    root: {
+      height: '3.5rem',
+    },
+    colorPrimary: {
+      color: '#fff',
+      backgroundColor: theme.palette.primary.dark,
     }
   }
 };
