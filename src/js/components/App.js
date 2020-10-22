@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, makeStyles, Link, Typography } from "@material-ui/core";
 import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon';
-import Nav from './Nav'
+import Nav from './Nav';
 
 // this is a test to make sure local styling works on build - it can be removed
 //also i dont know if this exact syntax is the best practice for local styling in material-ui I just borrowed it from a quick tutorial for the test
