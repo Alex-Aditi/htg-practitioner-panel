@@ -94,9 +94,10 @@ theme.overrides = {
       fontSize: '13px',
       padding: '1.7em 1em',
       letterSpacing: '0.05rem',
+      position: 'relative',
+      display: 'inline-block',
       '&:hover': {
         backgroundColor: '#6c4097',
-        backgroundSize: '100%'
       }
     }
   },
@@ -104,6 +105,7 @@ theme.overrides = {
     root: {
       height: '3.5rem',
       padding: '0px 32px',
+      display: 'flex',
     },
     colorPrimary: {
       color: '#fff',
