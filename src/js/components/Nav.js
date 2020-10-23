@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeStyles, AppBar, Toolbar, Typography, Button, IconButton } from '@material-ui/core';
+import { makeStyles, AppBar, Toolbar, IconButton, Button, Link } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 
 import cureLogo from "../../static/img/cure-logo.png";
@@ -15,10 +15,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   menuButton: {
-    marginRight: theme.spacing(2),
-  },
-  title: {
-    flexGrow: 1,
+    marginLeft: theme.spacing(2),
   },
 }));
 
@@ -37,10 +34,8 @@ export default function Nav() {
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" className={classes.title}>
-            News
-          </Typography>
-          <Button variant="text">Login</Button>
+          <Link color="textSecondary" underline="none" href="#">Login</Link>
+          <Button variant="text">FR</Button>
         </Toolbar>
       </AppBar>
     </div>
