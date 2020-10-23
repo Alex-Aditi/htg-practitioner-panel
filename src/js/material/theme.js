@@ -94,9 +94,10 @@ theme.overrides = {
       fontSize: '13px',
       padding: '1.7em 1em',
       letterSpacing: '0.05rem',
-      position: 'relative',
-      display: 'inline-block',
       '&:hover': {
+        backgroundColor: '#6c4097',
+      },
+      '&:focus': {
         backgroundColor: '#6c4097',
       }
     }
@@ -114,7 +115,7 @@ theme.overrides = {
   },
   MuiToolBar: {
     root: {
-      position: 'absolute',
+      // display: 'flex',
     }
   }
 };
