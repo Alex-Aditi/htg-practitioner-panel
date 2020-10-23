@@ -12,18 +12,15 @@ const logo = {
 }
 
 const useStyles = makeStyles((theme) => ({
-  // root: {
-  //   flexGrow: 1,
-  // },
   menuButton: {
-    // marginLeft: theme.spacing(2),
     '&:hover': {
       backgroundColor: 'inherit'
     }
   },
 }));
 
-export default function Nav() {
+export default function Nav({ user }) {
+
   const classes = useStyles();
 
   return (
@@ -35,7 +32,7 @@ export default function Nav() {
         alignItems="center"
       >
         <Grid item xs={12}>
-          <AppBar position="static">
+          <AppBar position="sticky">
               <Toolbar>
                 <Grid item xs={10}>
                   <img
@@ -44,9 +41,15 @@ export default function Nav() {
                     style={logo}
                   />
                 </Grid>
-                <Grid item xs={1}>
-                  <Link color="textSecondary" underline="none" href="#">Login</Link>
-                </Grid>
+                {user && user.validated ? (
+                  <Grid item xs={1}>
+                    <Link color="textSecondary" underline="none" href="#">Logout</Link>
+                  </Grid>
+                ) : (
+                  <Grid item xs={1}>
+                    <Link color="textSecondary" underline="none" href="#">Login</Link>
+                  </Grid>
+                )}
                 <Grid item xs={1}>
                   <Button variant="text">FR</Button>
                 </Grid>
