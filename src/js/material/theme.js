@@ -22,8 +22,15 @@ theme.props = {
     variant: 'contained'
   },
   MuiLink: {
-    color: 'textPrimary',
+    color: 'inherit',
     underline: 'always',
+  },
+  MuiAppBar: {
+    position: 'fixed',
+    elevation: 0,
+  },
+  MuiToolBar: {
+    disableGutters: true
   }
 };
 
@@ -49,9 +56,26 @@ theme.overrides = {
         backgroundColor: '#e9c03c'
       },
     },
+    text: {
+      fontSize: '16px',
+      color: theme.palette.primary.main,
+      fontWeight: 'normal',
+      '&:hover': {
+        color: '#fff',
+        background: 'none'
+      },
+      '&:focus': {
+        color: '#fff',
+        background: 'none'
+      },
+    }
   },
   MuiLink: {
+    root: {
+      fontFamily: theme.typography.fontFamily,
+    },
     underlineAlways: {
+      color: theme.palette.text.primary,
       textDecorationColor: 'transparent',
       borderBottomColor: theme.palette.secondary.light,
       borderBottom: '.2rem solid',
@@ -63,6 +87,35 @@ theme.overrides = {
         backgroundColor: theme.palette.secondary.light,
         textDecorationColor: theme.palette.secondary.light,
       },
+    },
+    underlineNone: {
+      color: '#fff',
+      textTransform: 'uppercase',
+      fontSize: '13px',
+      padding: '1.7em 1em',
+      letterSpacing: '0.05rem',
+      '&:hover': {
+        backgroundColor: '#6c4097',
+      },
+      '&:focus': {
+        backgroundColor: '#6c4097',
+      }
+    }
+  },
+  MuiAppBar: {
+    root: {
+      height: '3.5rem',
+      padding: '0px 32px',
+      display: 'flex',
+    },
+    colorPrimary: {
+      color: '#fff',
+      backgroundColor: theme.palette.primary.dark,
+    }
+  },
+  MuiToolBar: {
+    root: {
+      // display: 'flex',
     }
   }
 };
