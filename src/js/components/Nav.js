@@ -13,6 +13,9 @@ import MenuIcon from "@material-ui/icons/Menu";
 import cureLogo from "../../static/img/cure-logo.png";
 import { UserContext } from "../providers/UserProvider";
 
+//this will trigger a logout action from firebaseAuth in future;
+const logoutUser = () => alert("logging out");
+
 const logo = {
   height: "3em",
   width: "auto",
