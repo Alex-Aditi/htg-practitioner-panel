@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import {
   makeStyles,
   AppBar,
@@ -10,7 +10,6 @@ import {
 import MenuIcon from "@material-ui/icons/Menu";
 
 import cureLogo from "../../static/img/cure-logo.png";
-import { UserContext } from "../providers/UserProvider";
 import LogOutButton from "./LogOutButton";
 
 const logo = {

@@ -1,9 +1,9 @@
 import { Button, Grid } from "@material-ui/core";
 import React, { useContext } from "react";
+import { firebaseAuth } from "../firebase/firebase";
 import { UserContext } from "../providers/UserProvider";
 
-//this will trigger a logout action from firebaseAuth in future;
-const logoutUser = () => alert("logging out");
+const logoutUser = () => firebaseAuth.signOut();
 
 const LogOutButton = () => {
   //this is able to receive user as context because UserProvider is built higher into the react chain
