@@ -22,7 +22,10 @@ const SignUpFlow = () => {
         value={newUserPassword}
         onChange={updateState(setNewUserPassword)}
       ></Input>
-      <Button onClick={() => console.log({ newUserEmail, newUserPassword })}>
+      <Button
+        color={"primary"}
+        onClick={() => console.log({ newUserEmail, newUserPassword })}
+      >
         Sign Up
       </Button>
       <br></br>
@@ -38,6 +41,7 @@ const SignUpFlow = () => {
         onChange={updateState(setReturningUserPassword)}
       ></Input>
       <Button
+        color={"primary"}
         onClick={() => {
           alert(returningUserEmail);
           alert(returningUserPassword);
