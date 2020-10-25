@@ -53,13 +53,8 @@ export default function Nav() {
                     Logout
                   </Link>
                 </Grid>
-              ) : (
-                <Grid item xs={1}>
-                  <Link color="textSecondary" underline="none" href="#">
-                    Login
-                  </Link>
-                </Grid>
-              )}
+              ) : //when there is no user show nothing
+              null}
               <Grid item xs={1}>
                 <Button variant="text">FR</Button>
               </Grid>
