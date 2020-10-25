@@ -35,7 +35,7 @@ export default function Nav() {
   const classes = useStyles();
   //this is able to receive user as context because UserProvider is built higher into the react chain
   //i tested this with dummy data from UserProvider and it seems to work
-  const user = useContext(UserContext) || { uid: 12345 };
+  const user = useContext(UserContext);
 
   return (
     <div>

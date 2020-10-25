@@ -1,14 +1,21 @@
 import { Button, Input, Typography } from "@material-ui/core";
 import React, { useState } from "react";
+import { firebaseAuth } from "../firebase/firebase";
 
 const updateState = (stateFunction) => (event) =>
   stateFunction(event.target.value);
-
 const SignUpFlow = () => {
   const [newUserEmail, setNewUserEmail] = useState();
   const [newUserPassword, setNewUserPassword] = useState();
   const [returningUserEmail, setReturningUserEmail] = useState();
   const [returningUserPassword, setReturningUserPassword] = useState();
+
+  const handleSignUp = () =>
+    firebaseAuth
+      .createUserWithEmailAndPassword(newUserEmail, newUserPassword)
+      .then((userObject) => console.log(userObject))
+      .catch((error) => console.error(error));
+
   return (
     <div>
       <Typography variant="h6">Sign Up</Typography>
@@ -22,10 +29,7 @@ const SignUpFlow = () => {
         value={newUserPassword}
         onChange={updateState(setNewUserPassword)}
       ></Input>
-      <Button
-        color={"primary"}
-        onClick={() => console.log({ newUserEmail, newUserPassword })}
-      >
+      <Button color={"primary"} onClick={handleSignUp}>
         Sign Up
       </Button>
       <br></br>
