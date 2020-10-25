@@ -1,5 +1,6 @@
 import { Button, Input, Typography } from "@material-ui/core";
 import React, { useState } from "react";
+import { firebaseAuth } from "../firebase/firebase";
 import { updateStateOnChange } from "../updateState";
 
 const SignIn = () => {
@@ -7,7 +8,13 @@ const SignIn = () => {
   const [returningUserPassword, setReturningUserPassword] = useState();
 
   const handleSignIn = () => {
-    alert("Signing In");
+    firebaseAuth
+      .signInWithEmailAndPassword(returningUserEmail, returningUserPassword)
+      .catch((error) => {
+        const { code, message } = error;
+        alert(code);
+        alert(message);
+      });
   };
   return (
     <>
