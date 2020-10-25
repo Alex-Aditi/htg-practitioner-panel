@@ -11,9 +11,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 
 import cureLogo from "../../static/img/cure-logo.png";
 import { UserContext } from "../providers/UserProvider";
-
-//this will trigger a logout action from firebaseAuth in future;
-const logoutUser = () => alert("logging out");
+import LogOutButton from "./LogOutButton";
 
 const logo = {
   height: "3em",
@@ -33,9 +31,6 @@ const useStyles = makeStyles((theme) => ({
 //note that the component doesn't receive user as a prop but receives it from useContext below
 export default function Nav() {
   const classes = useStyles();
-  //this is able to receive user as context because UserProvider is built higher into the react chain
-  //i tested this with dummy data from UserProvider and it seems to work
-  const user = useContext(UserContext);
 
   return (
     <div>
@@ -46,19 +41,7 @@ export default function Nav() {
               <Grid item xs={10}>
                 <img src={cureLogo} alt="Cure Concordia Logo" style={logo} />
               </Grid>
-              {user /* && add a validation check here based on the user object we receive from firebase auth */ ? (
-                <Grid item xs={1}>
-                  {/* this actually is not likely to be a link to anything - rather this is a button with a logout action in its click handler */}
-                  {/* <Link color="textSecondary" underline="none" href="#">
-                    Logout
-                  </Link> */}
-                  {/* this styling may not be quite right i just pulled the button in - i left the link element commented above in case it contains styling information */}
-                  <Button variant="text" onClick={logoutUser}>
-                    Logout
-                  </Button>
-                </Grid>
-              ) : //when there is no user show nothing
-              null}
+              <LogOutButton />
               <Grid item xs={1}>
                 <Button variant="text">FR</Button>
               </Grid>
