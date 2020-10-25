@@ -36,7 +36,7 @@ export default function Nav() {
   const classes = useStyles();
   //this is able to receive user as context because UserProvider is built higher into the react chain
   //i tested this with dummy data from UserProvider and it seems to work
-  const user = useContext(UserContext);
+  const user = useContext(UserContext) || { uid: 12345 };
 
   return (
     <div>
@@ -49,9 +49,14 @@ export default function Nav() {
               </Grid>
               {user /* && add a validation check here based on the user object we receive from firebase auth */ ? (
                 <Grid item xs={1}>
-                  <Link color="textSecondary" underline="none" href="#">
+                  {/* this actually is not likely to be a link to anything - rather this is a button with a logout action in its click handler */}
+                  {/* <Link color="textSecondary" underline="none" href="#">
                     Logout
-                  </Link>
+                  </Link> */}
+                  {/* this styling may not be quite right i just pulled the button in - i left the link element commented above in case it contains styling information */}
+                  <Button variant="text" onClick={logoutUser}>
+                    Logout
+                  </Button>
                 </Grid>
               ) : //when there is no user show nothing
               null}
