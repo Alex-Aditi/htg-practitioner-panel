@@ -1,6 +1,26 @@
 import React from 'react';
-import { makeStyles, Link, Grid } from '@material-ui/core';
+import { withStyles, Link, Grid } from '@material-ui/core';
 import '../../static/style.css';
+
+const StyledLink = withStyles({
+    root: {
+        fontSize: "11px",
+        color: '#000000',
+        textDecoration: "none",
+        borderBottom: "0px transparent",
+        backgroundColor: "none",
+        textTransform: "none",
+        display: "block",
+        padding: "1.5em",
+        marginTop: "1em",
+        '&:hover': {
+            background: 'none',
+            backgroundSize: 0,
+            backgroundColor: 'none',
+            textDecoration: 'none',
+        }
+    },
+  })(Link)
 
 const staticText = {
     EmailSignUpText: [
@@ -21,27 +41,37 @@ const staticText = {
     ],
   };
 
-const FooterNavLink = ({ linkText }) => {
-    return (
-        <li>
-            <Link>{linkText}</Link>
-        </li>
+const FooterNavLink = ({ linkText, underline=true }) => {
+    return underline ? (
+        <Grid item xs={2}>
+            <li>
+                <Link>{linkText}</Link>
+            </li>
+        </Grid>
+    ) : (
+        <Grid item xs={2}>
+            <li>
+                <StyledLink>{linkText}</StyledLink>
+            </li>
+        </Grid>
+
     )
 }
 
 export default function Footer() {
     return (
         <Grid container  style={{"borderTop": "2px solid lightgrey"}}>
-                <Grid container spacing={1} className="wrapper">
+                <Grid container spacing={3} className="wrapper footer">
                     <Grid container item xs={12}>
-                        <ul className="footer-social">
-                                <FooterNavLink linkText={staticText.EmailSignUpText[1]} id="email"/>
-                                <span className="fb">f</span>
-                        </ul>
+                        <Grid item xs={12}>
+                            <ul className="footer-social">
+                                    <FooterNavLink underline={false} linkText={staticText.EmailSignUpText[1]}/>
+                                    <span className="fb">f</span>
+                            </ul>
+                        </Grid>
                     </Grid>
                     <Grid container item xs={12}>
                         <ul className="footer-nav">
-                            
                                 <FooterNavLink linkText={staticText.SeekingText[1]} />
                                 <FooterNavLink linkText={staticText.OfferingText[1]} />
                                 <FooterNavLink linkText={staticText.WhyText[1]} />
@@ -49,11 +79,11 @@ export default function Footer() {
                                 <FooterNavLink linkText={staticText.ResourcesText[1]} />
                         </ul>
                     </Grid>
-                </Grid>
-                <Grid container item xs={12}>
-                    <div className="copyright">
-                        {staticText.CopyrightText[1]}
-                    </div>
+                    <Grid container item xs={12}>
+                        <div className="copyright">
+                            {staticText.CopyrightText[1]}
+                        </div>
+                    </Grid>
                 </Grid>
         </Grid>
     )

@@ -3,7 +3,7 @@
 }
 
 
-ul.footer-nav {
+.footer-nav {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -15,7 +15,6 @@ ul.footer-nav {
     display: -webkit-flex;
     display: flex;
     flex-wrap: wrap;
-  
     justify-content: center;
   }
 
@@ -24,33 +23,30 @@ ul.footer-nav {
     margin-top: 1.5em;
     margin-bottom: 1.5em;
     font-size: 11px;
-  
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-  
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  ul.footer-social a {
+  .subscribe {
     font-size: 11px;
-    color: black;
+    color: #000000;
     text-decoration: none;
+    text-transform: none;
     display: block;
     padding: 1.5em;
     margin-top: 1em;
   }
-  
 
 a#email {
     padding-top: 2.8em;
   }
   
-  .fb {
+.fb {
     color: #f2c944;
     /* font-family: "SelawikRegular", Helvetica, Arial, sans-serif; */
     font-size: 30px;
@@ -58,7 +54,7 @@ a#email {
     padding-top: 0;
   }
   
-  div.copyright {
+.copyright {
     font-size: 11px;
     text-align: center;
     padding-bottom: 1em;
@@ -67,3 +63,10 @@ a#email {
     height: 30px;
   }
   
+  .clear-style {
+    background: none;
+  }
+  
+  .clear-style:hover {
+    background-size: 0;
+  }
