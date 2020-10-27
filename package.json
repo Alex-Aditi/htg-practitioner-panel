@@ -8,7 +8,8 @@
     "dev": "parcel src/static/index.html",
     "build": "parcel build src/static/index.html",
     "cleardev": "npm run clear && npm run dev",
-    "clearbuild": "npm run clear && npm run build"
+    "clearbuild": "npm run clear && npm run build",
+    "deploy:h": "firebase deploy --only hosting:htv-dev-practitioner"
   },
   "author": "Georgia Alexandra Heggie & Aditi Ohri",
   "license": "AGPL-3.0-only",
@@ -29,7 +30,8 @@
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
     "@types/react": "^16.9.53",
-    "react": "^17.0.1",
+    "firebase": "^7.24.0",
+    "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-router-dom": "^5.2.0"
   }

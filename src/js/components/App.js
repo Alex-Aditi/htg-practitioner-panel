@@ -1,18 +1,14 @@
 import React from "react";
 import { Button, makeStyles, Typography } from "@material-ui/core";
 import InsertEmoticonIcon from "@material-ui/icons/InsertEmoticon";
+import React, { useContext } from "react";
 import HeaderFooter from "./HeaderFooter";
-
-// this is a test to make sure local styling works on build - it can be removed
-//also i dont know if this exact syntax is the best practice for local styling in material-ui I just borrowed it from a quick tutorial for the test
-const useStyles = makeStyles({
-  borderButton: {
-    border: "10px solid black",
-  },
-});
+import Form from "./Form";
+import { UserContext } from "../providers/UserProvider";
+import SignUpFlow from "./SignUpFlow";
 
 const App = () => {
-  const classes = useStyles();
+  const user = useContext(UserContext);
   return (
       <HeaderFooter>
         <div className="header">
@@ -32,6 +28,7 @@ const App = () => {
               THIS IS A CUSTOM-sTYLED BUTTON USING LOCALLY DEFINED STYLES IN
               js/components/App.js
             </Button>
+        {user ? <Form /> : <SignUpFlow />}
           </div>
         </div>
       </HeaderFooter>
