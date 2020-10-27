@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, makeStyles, Link, Typography } from "@material-ui/core";
+import { Button, makeStyles, Typography } from "@material-ui/core";
 import InsertEmoticonIcon from "@material-ui/icons/InsertEmoticon";
 import HeaderFooter from "./HeaderFooter";
 
@@ -20,7 +20,6 @@ const App = () => {
             <Typography variant="h1" id="announce">
               Welcome to the Practitioner Panel
             </Typography>
-            {/* all these Buttons are tests to make sure material-ui builds and styles correctly - they can be removed */}
             <Button color="primary" id="seek">
               THIS IS A THEMED BUTTON USING PRIMARY COLOR STYLE FROM src/js/theme.js
             </Button>
