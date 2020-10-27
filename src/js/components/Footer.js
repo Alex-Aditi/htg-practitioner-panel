@@ -1,5 +1,6 @@
 import React from 'react';
 import { makeStyles, Link, Grid } from '@material-ui/core';
+import '../../static/style.css';
 
 const staticText = {
     EmailSignUpText: [
@@ -30,27 +31,27 @@ const FooterNavLink = ({ linkText }) => {
 
 export default function Footer() {
     return (
-        <Grid container className="main-foot">
-                <Grid container>
+        <Grid container  style={{"borderTop": "2px solid lightgrey"}}>
+                <Grid container spacing={1} className="wrapper">
                     <Grid container item xs={12}>
-                    <ul>
-                            <FooterNavLink linkText={staticText.EmailSignUpText[1]} />
-                            <FooterNavLink linkText={"fb icon"} />
-                    </ul>
+                        <ul className="footer-social">
+                                <FooterNavLink linkText={staticText.EmailSignUpText[1]} id="email"/>
+                                <span className="fb">f</span>
+                        </ul>
                     </Grid>
                     <Grid container item xs={12}>
-                    <ul>
-                        
-                            <FooterNavLink linkText={staticText.SeekingText[1]} />
-                            <FooterNavLink linkText={staticText.OfferingText[1]} />
-                            <FooterNavLink linkText={staticText.WhyText[1]} />
-                            <FooterNavLink linkText={staticText.AboutText[1]} />
-                            <FooterNavLink linkText={staticText.ResourcesText[1]} />
-                    </ul>
+                        <ul className="footer-nav">
+                            
+                                <FooterNavLink linkText={staticText.SeekingText[1]} />
+                                <FooterNavLink linkText={staticText.OfferingText[1]} />
+                                <FooterNavLink linkText={staticText.WhyText[1]} />
+                                <FooterNavLink linkText={staticText.AboutText[1]} />
+                                <FooterNavLink linkText={staticText.ResourcesText[1]} />
+                        </ul>
                     </Grid>
                 </Grid>
                 <Grid container item xs={12}>
-                    <div>
+                    <div className="copyright">
                         {staticText.CopyrightText[1]}
                     </div>
                 </Grid>
