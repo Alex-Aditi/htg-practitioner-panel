@@ -1,6 +1,5 @@
 import React from 'react';
 import { withStyles, Link, Grid, Typography } from '@material-ui/core';
-import '../../static/style.css';
 
 const StyledLink = withStyles({
     root: {
