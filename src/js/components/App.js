@@ -14,27 +14,28 @@ const useStyles = makeStyles({
 const App = () => {
   const classes = useStyles();
   return (
-    <div>
       <HeaderFooter>
-        <Typography>
-          <Link href="#">This is a link!</Link>
-        </Typography>
-        {/* all these Buttons are tests to make sure material-ui builds and styles correctly - they can be removed */}
-        <Button>THIS IS A STANDARD BUTTON</Button>
-        <Button color="primary">
-          THIS IS A THEMED BUTTON USING PRIMARY COLOR STYLE FROM src/js/theme.js
-        </Button>
-        <Button color="secondary">
-          <InsertEmoticonIcon />
-          THIS IS A THEMED BUTTON USING SECONDARY COLOR STYLE FROM
-          src/js/theme.js
-        </Button>
-        <Button className={classes.borderButton}>
-          THIS IS A CUSTOM-sTYLED BUTTON USING LOCALLY DEFINED STYLES IN
-          js/components/App.js
-        </Button>
+        <div className="header">
+          <div className="inner home">
+            <Typography variant="h1" id="announce">
+              Welcome to the Practitioner Panel
+            </Typography>
+            {/* all these Buttons are tests to make sure material-ui builds and styles correctly - they can be removed */}
+            <Button color="primary" id="seek">
+              THIS IS A THEMED BUTTON USING PRIMARY COLOR STYLE FROM src/js/theme.js
+            </Button>
+            <Button color="secondary" id="offer">
+              <InsertEmoticonIcon />
+              THIS IS A THEMED BUTTON USING SECONDARY COLOR STYLE FROM
+              src/js/theme.js
+            </Button>
+            <Button className={classes.borderButton} id="newsletter">
+              THIS IS A CUSTOM-sTYLED BUTTON USING LOCALLY DEFINED STYLES IN
+              js/components/App.js
+            </Button>
+          </div>
+        </div>
       </HeaderFooter>
-    </div>
   );
 };
 

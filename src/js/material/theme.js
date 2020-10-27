@@ -14,6 +14,13 @@ const theme = createMuiTheme({
       dark: '#d5b13c', // button border color
     },
   },
+  typography: {
+    h1: {
+      fontSize: '2.7 em',
+      margin: '1.2em 0',
+      fontWeight: 'normal'
+    }
+  }
 });
 
 theme.props = {

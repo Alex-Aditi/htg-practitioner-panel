@@ -11,7 +11,7 @@ const HeaderFooter = ({ children }) => {
   const user = { uid: 12345, validated: true };
   return (
     <>
-      <Nav user={user} /> 
+      <Nav user={user}/> 
       {children}
       <Footer/>
     </>
