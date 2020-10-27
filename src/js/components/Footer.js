@@ -1,5 +1,5 @@
 import React from 'react';
-import { withStyles, Link, Grid } from '@material-ui/core';
+import { withStyles, Link, Grid, Typography } from '@material-ui/core';
 import '../../static/style.css';
 
 const StyledLink = withStyles({
@@ -21,6 +21,17 @@ const StyledLink = withStyles({
         }
     },
   })(Link);
+
+const Copyright = withStyles({
+    root: {
+        fontSize: "11px",
+        textAlign: "center",
+        paddingBottom: "1em",
+        paddingTop: "5em",
+        width: "100%",
+        height: "30px",
+    },
+  })(Typography);
 
 
 const staticText = {
@@ -81,9 +92,9 @@ export default function Footer() {
                         </ul>
                     </Grid>
                     <Grid container item xs={12}>
-                        <div className="copyright">
+                        <Copyright>
                             {staticText.CopyrightText[1]}
-                        </div>
+                        </Copyright>
                     </Grid>
                 </Grid>
         </Grid>
