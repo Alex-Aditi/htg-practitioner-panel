@@ -2,7 +2,6 @@
   margin: 0 auto;
 }
 
-
 .footer-nav {
     list-style: none;
     margin: 0;
@@ -30,20 +29,6 @@
     align-items: center;
   }
 
-  .subscribe {
-    font-size: 11px;
-    color: #000000;
-    text-decoration: none;
-    text-transform: none;
-    display: block;
-    padding: 1.5em;
-    margin-top: 1em;
-  }
-  
-
-a#email {
-    padding-top: 2.8em;
-  }
   
 .fb {
     color: #f2c944;
@@ -51,21 +36,4 @@ a#email {
     font-size: 30px;
     font-weight: bold;
     padding-top: 0;
-  }
-  
-.copyright {
-    font-size: 11px;
-    text-align: center;
-    padding-bottom: 1em;
-    padding-top: 5em;
-    width: 100%;
-    height: 30px;
-  }
-  
-  .clear-style {
-    background: none;
-  }
-  
-  .clear-style:hover {
-    background-size: 0;
   }
