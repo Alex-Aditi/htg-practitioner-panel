@@ -20,7 +20,8 @@ const StyledLink = withStyles({
             textDecoration: 'none',
         }
     },
-  })(Link)
+  })(Link);
+
 
 const staticText = {
     EmailSignUpText: [
@@ -60,7 +61,7 @@ const FooterNavLink = ({ linkText, underline=true }) => {
 
 export default function Footer() {
     return (
-        <Grid container  style={{"borderTop": "2px solid lightgrey"}}>
+        <Grid container style={{"borderTop": "2px solid lightgrey"}}>
                 <Grid container spacing={3} className="wrapper footer">
                     <Grid container item xs={12}>
                         <Grid item xs={12}>
@@ -70,7 +71,7 @@ export default function Footer() {
                             </ul>
                         </Grid>
                     </Grid>
-                    <Grid container item xs={12}>
+                    <Grid container item xs={12} style={{display: "inline"}}>
                         <ul className="footer-nav">
                                 <FooterNavLink linkText={staticText.SeekingText[1]} />
                                 <FooterNavLink linkText={staticText.OfferingText[1]} />

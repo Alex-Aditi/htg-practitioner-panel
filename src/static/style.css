@@ -13,9 +13,7 @@
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
   }
 
   .footer-social {
@@ -27,9 +25,9 @@
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
   }
 
   .subscribe {
@@ -41,6 +39,7 @@
     padding: 1.5em;
     margin-top: 1em;
   }
+  
 
 a#email {
     padding-top: 2.8em;
@@ -48,7 +47,7 @@ a#email {
   
 .fb {
     color: #f2c944;
-    /* font-family: "SelawikRegular", Helvetica, Arial, sans-serif; */
+    font-family: "SelawikRegular", Helvetica, Arial, sans-serif;
     font-size: 30px;
     font-weight: bold;
     padding-top: 0;
