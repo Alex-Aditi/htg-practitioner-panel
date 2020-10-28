@@ -18,15 +18,15 @@ const App = () => {
           <Typography variant="h1" id="announce">
             Welcome to the Practitioner Panel
           </Typography>
-          <div id="seek">
-            {user ? <Form /> : <SignUpFlow />}
-          </div>
+          <div id="seek">{user ? <Form /> : <SignUpFlow />}</div>
           <div id="offer">
             <SquareCard title="Test Card">
               <Typography>
-                This card is a sample of the cards that will be included in the form.
+                This card is a sample of the cards that will be included in the
+                form.
               </Typography>
-              <ArrowForward text="Next Card"/> 
+              <ArrowForward text="Next" href="#" />
+              <ArrowBackward text="Back" href="#"/>
             </SquareCard>
           </div>
         </div>

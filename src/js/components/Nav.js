@@ -19,13 +19,13 @@ const logo = {
   // paddingTop: '0.3em',
 };
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles({
   menuButton: {
     "&:hover": {
       backgroundColor: "inherit",
     },
   },
-}));
+});
 
 //note that the component doesn't receive user as a prop but receives it from useContext below
 export default function Nav() {
