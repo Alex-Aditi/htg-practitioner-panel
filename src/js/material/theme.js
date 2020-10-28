@@ -28,8 +28,6 @@ const theme = createMuiTheme({
     h6: {
       fontSize: '0.88em',
       lineHeight: "2em",
-      verticalAlign: "top",
-      paddingTop: "2px",
     },
   },
 });

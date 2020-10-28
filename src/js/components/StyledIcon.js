@@ -10,7 +10,6 @@ const styles = {
     fontWeight: "900",
     display: "inline-flex",
     lineHeight: "2em",
-    marginTop: 0,
     "&:hover": {
       background: "none",
     },

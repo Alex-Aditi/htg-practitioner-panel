@@ -6,8 +6,9 @@ import { UserContext } from "../providers/UserProvider";
 import SignUpFlow from "./SignUpFlow";
 
 import SquareCard from "./SquareCard";
-import ArrowForward from "./ArrowForward";
-import ArrowBackward from "./ArrowBackward";
+import ArrowBackward from './ArrowBackward';
+import ArrowForward from './ArrowForward';
+
 
 const App = () => {
   const user = useContext(UserContext);
@@ -24,11 +25,9 @@ const App = () => {
               <Typography>
                 This card is a sample of the cards that will be included in the
                 form.
-              </Typography>
-              <div style={{justifyContent: 'flex-start'}}>
                 <ArrowBackward text="Back" href="#" />
                 <ArrowForward text="Next" href="#" />
-              </div>
+              </Typography>
             </SquareCard>
           </div>
         </div>
