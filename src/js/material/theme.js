@@ -19,6 +19,19 @@ const theme = createMuiTheme({
       fontSize: '2.7 em',
       margin: '1.2em 0',
       fontWeight: 'normal'
+    },
+    h3: {
+      fontSize: '1.17 em',
+      margin: '1em 0',
+      fontWeight: 'normal'
+    },
+    h6: {
+      margin: 0,
+      paddingRight: '0.5 em',
+      color: theme.palette.secondary,
+      lineHeight: '2em',
+      verticalAlign: 'top',
+      paddingTop: '2px'
     }
   }
 });
@@ -120,11 +133,6 @@ theme.overrides = {
       backgroundColor: theme.palette.primary.dark,
     }
   },
-  MuiToolBar: {
-    root: {
-      // display: 'flex',
-    }
-  }
 };
 
 export default theme;
