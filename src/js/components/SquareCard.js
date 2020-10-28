@@ -1,7 +1,7 @@
 import React from 'react';
-import { Card, CardContent, Typography, makeStyles } from '@material-ui/core'
+import { Card, Typography, makeStyles } from '@material-ui/core'
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles({
     root: {
       border: '1px solid grey',
       padding: '1em',
@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
       overflow: 'hidden',
       display: 'block',
     },
-  }));
+  });
   
 
 export default function SquareCard({ title, children }) {
