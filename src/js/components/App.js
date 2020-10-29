@@ -12,16 +12,20 @@ import ArrowForward from "./styleElements/ArrowForward";
 const App = () => {
   const user = useContext(UserContext);
   return (
-    <HeaderFooter>
-      <div className="header">
-        <div className="inner home">
-          <Typography variant="h1" id="announce">
-            Welcome to the Practitioner Panel
-          </Typography>
-          <div id="seek">{user ? <Form /> : <SignUpFlow />}</div>
+    <>
+    {user ? <Form /> : 
+      <HeaderFooter>
+        <div className="header">
+          <div className="inner home">
+            <Typography variant="h1" id="announce">
+              Welcome to the Practitioner Panel
+            </Typography>
+            <div id="seek"><SignUpFlow /></div>
+          </div>
         </div>
-      </div>
-    </HeaderFooter>
+      </HeaderFooter>
+    }
+    </>
   );
 };
 
