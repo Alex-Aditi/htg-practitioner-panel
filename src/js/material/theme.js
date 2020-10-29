@@ -26,8 +26,11 @@ const theme = createMuiTheme({
       fontWeight: "normal",
     },
     h6: {
-      fontSize: "0.88em",
+      color: "#000",
+      fontSize: "0.67em",
       lineHeight: "2em",
+      textTransform: "uppercase",
+      letterSpacing: "0.05em",
     },
   },
 });
