@@ -19,16 +19,6 @@ const App = () => {
             Welcome to the Practitioner Panel
           </Typography>
           <div id="seek">{user ? <Form /> : <SignUpFlow />}</div>
-          <div id="offer">
-            <SquareCard title="Test Card">
-              <Typography>
-                This card is a sample of the cards that will be included in the
-                form.
-              </Typography>
-              <ArrowBackward text="Back" href="#" />
-              <ArrowForward text="Next" href="#" />
-            </SquareCard>
-          </div>
         </div>
       </div>
     </HeaderFooter>
