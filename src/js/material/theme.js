@@ -26,7 +26,7 @@ const theme = createMuiTheme({
       fontWeight: "normal",
     },
     h6: {
-      fontSize: '0.88em',
+      fontSize: "0.88em",
       lineHeight: "2em",
     },
   },
