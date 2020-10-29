@@ -2,14 +2,18 @@
 import React from "react";
 
 import HeaderFooter from './HeaderFooter';
+import SquareCard from "./styleElements/SquareCard";
 
 import { Button } from "@material-ui/core";
+
 
 const Form = () => {
   return (
     <>
       <HeaderFooter>
-        <Button color="primary">Begin</Button>
+        <SquareCard>
+          <Button color="primary">Begin</Button>
+        </SquareCard>
       </HeaderFooter>
     </>
   );

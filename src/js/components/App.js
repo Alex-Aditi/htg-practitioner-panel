@@ -2,12 +2,8 @@ import React, { useContext } from "react";
 import { Typography } from "@material-ui/core";
 import HeaderFooter from "./HeaderFooter";
 import Form from "./Form";
+import SignUpFlow from './SignUpFlow';
 import { UserContext } from "../providers/UserProvider";
-import SignUpFlow from "./SignUpFlow";
-
-import SquareCard from "./styleElements/SquareCard";
-import ArrowBackward from "./styleElements/ArrowBackward";
-import ArrowForward from "./styleElements/ArrowForward";
 
 const App = () => {
   const user = useContext(UserContext);
