@@ -4,7 +4,8 @@ import { Card, Typography, makeStyles } from "@material-ui/core";
 const useStyles = makeStyles({
   root: {
     border: "1px solid grey",
-    padding: "1em",
+    padding: "2em",
+    margin: "5em 0em",
     height: "fit-content",
     backgroundColor: "#fff",
     overflow: "hidden",
