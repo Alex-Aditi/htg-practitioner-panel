@@ -8,11 +8,11 @@ const textStyle = {
   padding: "2px 6px 0px 0px",
 };
 
-export default function ArrowForward({ text, onClick }) {
+export default function ArrowForward({ onClick }) {
   return (
     <StyledIcon onClick={onClick}>
       <Typography variant="h6" style={textStyle}>
-        {text}
+        Next
       </Typography>
       <Icon className="fas fa-arrow-right"></Icon>
     </StyledIcon>

@@ -1,5 +1,7 @@
 import React from "react";
 import { Card, Typography, makeStyles } from "@material-ui/core";
+import ArrowForward from './ArrowForward';
+import ArrowBackward from './ArrowBackward';
 
 const useStyles = makeStyles({
   root: {
@@ -13,7 +15,33 @@ const useStyles = makeStyles({
   },
 });
 
-export default function SquareCard({ title, children }) {
+function buttonChildren(arrows) {
+  switch(arrows) {
+    case "both":
+      return (
+        <>
+          <ArrowForward />
+          <ArrowBackward />
+        </>
+      );
+    case "back":
+      return (
+        <>
+          <ArrowBackward />
+        </>
+      );
+    case "next": 
+      return (
+        <>
+          <ArrowForward />
+        </>
+      );
+    default:
+      <></>
+  }
+}
+
+export default function SquareCard({ title, children, arrows }) {
   const classes = useStyles();
 
   return (
@@ -23,6 +51,7 @@ export default function SquareCard({ title, children }) {
           {title}
         </Typography>
         {children}
+        {buttonChildren(arrows)}
       </Card>
     </div>
   );
