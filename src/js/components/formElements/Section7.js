@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import SquareCard from "../styleElements/SquareCard";
-import ArrowForward from "../styleElements/ArrowForward";
-import ArrowBackward from "../styleElements/ArrowBackward";
 import { Typography } from "@material-ui/core";
 
 export default class Section2 extends Component {

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import SquareCard from "../styleElements/SquareCard";
-import ArrowForward from "../styleElements/ArrowForward";
 import ArrowBackward from "../styleElements/ArrowBackward";
 import { Typography, Button } from "@material-ui/core";
 
