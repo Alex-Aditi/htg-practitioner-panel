@@ -15,32 +15,6 @@ const useStyles = makeStyles({
   },
 });
 
-function buttonChildren(arrows) {
-  switch(arrows) {
-    case "both":
-      return (
-        <>
-          <ArrowForward />
-          <ArrowBackward />
-        </>
-      );
-    case "back":
-      return (
-        <>
-          <ArrowBackward />
-        </>
-      );
-    case "next": 
-      return (
-        <>
-          <ArrowForward />
-        </>
-      );
-    default:
-      <></>
-  }
-}
-
 export default function SquareCard({ title, children, arrows }) {
   const classes = useStyles();
 
@@ -51,7 +25,6 @@ export default function SquareCard({ title, children, arrows }) {
           {title}
         </Typography>
         {children}
-        {buttonChildren(arrows)}
       </Card>
     </div>
   );
