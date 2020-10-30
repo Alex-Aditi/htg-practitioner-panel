@@ -21,13 +21,14 @@ const theme = createMuiTheme({
       fontWeight: "normal",
     },
     h3: {
-      fontSize: "1.17 em",
-      margin: "1em 0",
-      fontWeight: "normal",
+      margin: "0.5em 0",
     },
     h6: {
-      fontSize: '0.88em',
+      color: "#000",
+      fontSize: "0.67em",
       lineHeight: "2em",
+      textTransform: "uppercase",
+      letterSpacing: "0.05em",
     },
   },
 });
@@ -129,6 +130,11 @@ theme.overrides = {
       backgroundColor: theme.palette.primary.dark,
     },
   },
+  MuiTypography: {
+    root: {
+      margin: '0.5em 0'
+    }
+  }
 };
 
 export default theme;

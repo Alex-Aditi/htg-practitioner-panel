@@ -4,18 +4,16 @@ import { Typography } from "@material-ui/core";
 import StyledIcon from './StyledIcon';
 
 const textStyle = {
-  color: "#000",
   textAlign: "left",
-  letterSpacing: "0.05em",
   padding: "0px 0px 2px 6px",
 };
 
-export default function ArrowBackward({ text, href }) {
+export default function ArrowBackward({ onClick }) {
   return (
-      <StyledIcon href={href}>
+      <StyledIcon onClick={onClick}>
         <Icon className="fas fa-arrow-left"></Icon>
         <Typography variant="h6" style={textStyle}>
-          {text}
+          Back
         </Typography>
       </StyledIcon>
   );

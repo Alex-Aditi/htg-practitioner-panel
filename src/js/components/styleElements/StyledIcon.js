@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, withStyles } from "@material-ui/core";
+import { IconButton, withStyles } from "@material-ui/core";
 import clsx from 'clsx';
 
 const styles = {
@@ -22,9 +22,9 @@ const styles = {
 function StyledIcon(props) {
     const { classes, children, className, ...other } = props;
     return (
-        <Link underline="none" className={clsx(classes.root, className)} {...other}>
+        <IconButton className={clsx(classes.root, className)} {...other}>
             {children}
-        </Link>
+        </IconButton>
     )
 }
 

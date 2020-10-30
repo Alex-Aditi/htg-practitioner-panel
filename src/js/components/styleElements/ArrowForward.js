@@ -1,20 +1,18 @@
 import React from "react";
 import { Icon } from "@material-ui/core";
 import { Typography } from "@material-ui/core";
-import StyledIcon from './StyledIcon';
+import StyledIcon from "./StyledIcon";
 
 const textStyle = {
-  color: "#000",
   textAlign: "right",
-  letterSpacing: "0.05em",
   padding: "2px 6px 0px 0px",
 };
 
-export default function ArrowForward({ text, href }) {
+export default function ArrowForward({ onClick }) {
   return (
-    <StyledIcon href={href}>
+    <StyledIcon onClick={onClick}>
       <Typography variant="h6" style={textStyle}>
-        {text}
+        Next
       </Typography>
       <Icon className="fas fa-arrow-right"></Icon>
     </StyledIcon>
