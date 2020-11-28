@@ -1,12 +1,12 @@
 import React from "react";
 import Footer from "./Footer";
-import Nav from "./Nav";
+import NavBar from "./NavBar";
 
 // potentially refactor Footer into this file
 const HeaderFooter = ({ children }) => {
   return (
     <>
-      <Nav />
+      <NavBar />
       {children}
       <Footer />
     </>
