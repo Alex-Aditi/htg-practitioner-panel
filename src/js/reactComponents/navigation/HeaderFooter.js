@@ -1,9 +1,6 @@
 import React from "react";
 import Footer from "./Footer";
-import Nav from './Nav'
-
-//this will trigger a logout action from firebaseAuth in future;
-const logoutUser = () => alert("logging out");
+import Nav from "./Nav";
 
 // potentially refactor Footer into this file
 const HeaderFooter = ({ children }) => {
@@ -11,7 +8,7 @@ const HeaderFooter = ({ children }) => {
     <>
       <Nav />
       {children}
-      <Footer/>
+      <Footer />
     </>
   );
 };
