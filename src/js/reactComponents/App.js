@@ -1,13 +1,13 @@
 import React, { useContext } from "react";
 import { Typography } from "@material-ui/core";
 import HeaderFooter from "./HeaderFooter";
-import Form from "./Form";
+import Form from "./form/Form";
 import { UserContext } from "../providers/UserProvider";
 import SignUpFlow from "./SignUpFlow";
 
-import SquareCard from "./styleElements/SquareCard";
-import ArrowBackward from "./styleElements/ArrowBackward";
-import ArrowForward from "./styleElements/ArrowForward";
+import SquareCard from "./UI/SquareCard";
+import ArrowBackward from "./UI/customComponents/ArrowBackward";
+import ArrowForward from "./UI/ArrowForward";
 
 const App = () => {
   const user = useContext(UserContext);

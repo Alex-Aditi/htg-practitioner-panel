@@ -2,9 +2,9 @@ import React from "react";
 import { render } from "react-dom";
 import { ThemeProvider } from "@material-ui/core";
 
-import App from "./components/App";
+import App from "./reactComponents/App";
 import UserProvider from "./providers/UserProvider";
-import theme from "./material/theme";
+import theme from "./reactComponents/UI/theme";
 
 render(
   <UserProvider>
