@@ -1,7 +1,7 @@
 import { Button, Input, Typography } from "@material-ui/core";
 import React, { useState } from "react";
-import { firebaseAuth } from "../firebase/firebase";
-import { updateStateOnChange } from "../updateState";
+import { firebaseAuth } from "../../firebase/firebase";
+import { updateStateOnChange } from "../../utilities/updateState";
 
 const SignIn = () => {
   const [returningUserEmail, setReturningUserEmail] = useState();

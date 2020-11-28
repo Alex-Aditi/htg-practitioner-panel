@@ -86,6 +86,7 @@ theme.overrides = {
       },
     },
   },
+  // this may need a refactor into a specialized button if the compiled html becomes an <a> tag
   MuiLink: {
     root: {
       fontFamily: theme.typography.fontFamily,

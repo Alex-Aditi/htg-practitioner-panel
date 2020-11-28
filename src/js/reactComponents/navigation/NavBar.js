@@ -9,7 +9,7 @@ import {
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 
-import cureLogo from "../../static/img/cure-logo.png";
+import cureLogo from "../../../static/img/cure-logo.png";
 import LogOutButton from "./LogOutButton";
 
 const logo = {
@@ -28,7 +28,7 @@ const useStyles = makeStyles({
 });
 
 //note that the component doesn't receive user as a prop but receives it from useContext below
-export default function Nav() {
+export default function NavBar() {
   const classes = useStyles();
 
   return (
