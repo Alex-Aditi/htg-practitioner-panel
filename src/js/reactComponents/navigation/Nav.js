@@ -9,7 +9,7 @@ import {
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 
-import cureLogo from "../../static/img/cure-logo.png";
+import cureLogo from "../../../static/img/cure-logo.png";
 import LogOutButton from "./LogOutButton";
 
 const logo = {

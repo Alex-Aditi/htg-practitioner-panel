@@ -1,6 +1,6 @@
 import { Button, Grid } from "@material-ui/core";
 import React, { useContext } from "react";
-import { firebaseAuth } from "../firebase/firebase";
+import { firebaseAuth } from "../../firebase/firebase";
 import { UserContext } from "../providers/UserProvider";
 
 const logoutUser = () => firebaseAuth.signOut();
