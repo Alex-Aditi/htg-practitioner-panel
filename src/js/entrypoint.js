@@ -3,7 +3,7 @@ import { render } from "react-dom";
 import { ThemeProvider } from "@material-ui/core";
 
 import App from "./reactComponents/App";
-import UserProvider from "./providers/UserProvider";
+import UserProvider from "./reactComponents/providers/UserProvider";
 import theme from "./reactComponents/UI/theme";
 
 render(
