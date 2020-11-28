@@ -28,7 +28,7 @@ const useStyles = makeStyles({
 });
 
 //note that the component doesn't receive user as a prop but receives it from useContext below
-export default function Nav() {
+export default function NavBar() {
   const classes = useStyles();
 
   return (
