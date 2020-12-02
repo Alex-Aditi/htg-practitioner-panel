@@ -4,7 +4,10 @@ import { Card, Typography, makeStyles } from "@material-ui/core";
 const useStyles = makeStyles({
   root: {
     border: "1px solid grey",
-    padding: "1em",
+    // possibly different adding needed for signupflow cards and form cards
+    // padding: "1em",
+    padding: "3em",
+    margin: "3em 0",
     height: "fit-content",
     backgroundColor: "#fff",
     overflow: "hidden",
