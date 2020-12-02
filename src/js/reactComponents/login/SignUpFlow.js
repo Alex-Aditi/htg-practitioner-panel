@@ -9,9 +9,12 @@ import lavenderJpg from "../../../static/img/header.jpg";
 
 const SignUpFlow = () => {
   return (
-    <div style={{ background: `url(${lavenderJpg}) no-repeat top center/100% fixed` }}
+    <div
+      style={{
+        background: `url(${lavenderJpg}) no-repeat top center/100% fixed`,
+      }}
     >
-      <Typography variant="h1" id="announce">
+      <Typography variant="h1" id="announce" style={{ margin: "0 auto" }}>
         Welcome to the Practitioner Panel
       </Typography>
       <SignUp />
