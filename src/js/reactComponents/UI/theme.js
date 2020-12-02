@@ -17,7 +17,8 @@ const theme = createMuiTheme({
   typography: {
     h1: {
       fontSize: "2.7 em",
-      margin: "1.2em 0",
+      // margin: "1.2em 0",
+      marginBottom: "1.2em",
       fontWeight: "normal",
     },
     h3: {
@@ -26,7 +27,7 @@ const theme = createMuiTheme({
       fontWeight: "normal",
     },
     h6: {
-      fontSize: '0.88em',
+      fontSize: "0.88em",
       lineHeight: "2em",
     },
   },
