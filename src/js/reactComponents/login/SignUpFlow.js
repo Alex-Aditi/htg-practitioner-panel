@@ -19,12 +19,14 @@ const SignUpFlow = () => {
       }}
     >
       <Grid item xs={12}>
-        <Typography variant="h1" id="announce" style={{ margin: "0 auto" }}>
-          Welcome to the Practitioner Panel
-        </Typography>
-        <SignUp />
-        <br></br>
-        <SignIn />
+        <Card>
+          <Typography variant="h1" id="announce">
+            Welcome to the Practitioner Panel
+          </Typography>
+          <SignUp />
+          <br></br>
+          <SignIn />
+        </Card>
       </Grid>
     </Grid>
   );
