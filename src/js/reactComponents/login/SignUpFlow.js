@@ -5,13 +5,15 @@ import SignUp from "./SignUp";
 
 import lavenderJpg from "../../../static/img/header.jpg";
 
+
+
 const SignUpFlow = () => {
   return (
-    <div>
+    <div style={{ background: `url(${lavenderJpg}) no-repeat top center/100% fixed` }}
+    >
       <Typography variant="h1" id="announce">
         Welcome to the Practitioner Panel
       </Typography>
-      <img src={lavenderJpg} alt="lavender"></img>
       <SignUp />
       <br></br>
       <SignIn />
