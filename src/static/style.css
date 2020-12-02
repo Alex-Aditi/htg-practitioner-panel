@@ -2,105 +2,24 @@
   margin: 0 auto;
 }
 
-.home {
-  height: 100%;
-  margin-top: 5.5em;
-  display: grid;
-  grid-column-gap: 6%;
-
-  grid-template-columns: [home-first] 29% [home-line2] 29% [home-line3] 29% [home-end];
-  grid-template-rows: [home-row-first] 37% [home-row-line2] 19% [home-row-line3] 19% [home-row-line4] 2em [home-row-end];
+.footer-social {
+  list-style: none;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  font-size: 11px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-#announce {
-  width: 500px;
-  font-size: 3em;
-
-  grid-column-start: home-first;
-  grid-column-end: home-line3;
-  grid-row-start: home-row-first;
-  grid-row-end: home-row-line2;
-}
-
-#seek {
-  grid-column-start: home-first;
-  grid-column-end: home-line2;
-  grid-row-start: home-row-line2;
-  grid-row-end: home-row-line3;
-}
-
-#offer {
-  grid-column-start: home-line3;
-  grid-column-end: home-end;
-  grid-row-start: home-row-line2;
-  grid-row-end: home-row-line3;
-}
-
-#newsletter {
-  grid-column-start: home-line2;
-  grid-column-end: home-line3;
-  grid-row-start: home-row-line3;
-  grid-row-end: home-row-line4;
-}
-
-.header {
-  grid-area: header;
-  width: 100%;
-  height: auto;
-  display: block;
-  height: 50em;
-  background: url("img/header.jpg") no-repeat top center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.content {
-  grid-area: content;
-  height: 100%;
-  margin: 5em 2em;
-}
-
-.inner {
-  width: 80%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-top: 3em;
-}
-
-.footer-nav {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    font-size: 11px;
-  
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    justify-content: space-evenly;
-  }
-
-  .footer-social {
-    list-style: none;
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
-    font-size: 11px;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-
-  
 .fb {
-    color: #f2c944;
-    font-family: "SelawikRegular", Helvetica, Arial, sans-serif;
-    font-size: 30px;
-    font-weight: bold;
-    padding-top: 0;
-  }
+  color: #f2c944;
+  font-family: "SelawikRegular", Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 0;
+}
