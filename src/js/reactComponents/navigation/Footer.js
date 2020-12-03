@@ -1,6 +1,7 @@
 import React from "react";
 import { withStyles, Link, Grid, Typography } from "@material-ui/core";
 
+// remaining relevant styles from style.css
 // .wrapper {
 //   margin: 0 auto;
 // }
@@ -74,21 +75,21 @@ const staticText = {
   ],
 };
 
-const FooterNavLink = ({ linkText, underline = true }) => {
-  return underline ? (
-    <Grid item xs={2}>
-      <li>
-        <Link>{linkText}</Link>
-      </li>
-    </Grid>
-  ) : (
-    <Grid item xs={2}>
-      <li>
-        <StyledLink>{linkText}</StyledLink>
-      </li>
-    </Grid>
-  );
-};
+// const FooterNavLink = ({ linkText, underline = true }) => {
+//   return underline ? (
+//     <Grid item xs={2}>
+//       <li>
+//         <Link>{linkText}</Link>
+//       </li>
+//     </Grid>
+//   ) : (
+//     <Grid item xs={2}>
+//       <li>
+//         <StyledLink>{linkText}</StyledLink>
+//       </li>
+//     </Grid>
+//   );
+// };
 
 export default function Footer() {
   return (
@@ -97,10 +98,11 @@ export default function Footer() {
         <Grid container item xs={12}>
           <Grid item xs={12}>
             <ul className="footer-social">
-              <FooterNavLink
+              <Link underline="hover">S'abonner aux courriels mise à jour</Link>
+              {/* <FooterNavLink
                 underline={false}
                 linkText={staticText.EmailSignUpText[1]}
-              />
+              /> */}
               <span className="fb">f</span>
             </ul>
           </Grid>
