@@ -1,6 +1,6 @@
 import { createMuiTheme } from "@material-ui/core";
 
-//this function takes an object with theme values as an argument
+// this function takes an object with theme values as an argument
 // and then returns a new theme that overrides the default Mui theme;
 // this theme object is later provided as a prop to the themeProvider (see src\js\entrypoint.js)
 // where values are not specified here, the site uses the default MUi theme values;
@@ -8,15 +8,14 @@ import { createMuiTheme } from "@material-ui/core";
 
 const theme = createMuiTheme({
   // palette is the color scheme of the theme
-  // based on underlying MAterial design principles, some MUI components will use primary or secondary color scheme as a default
-  // most components, primary or secondary, will default to the main version of their scheme
+  // based on underlying Material design principles, some MUI components will use primary or secondary color scheme as a default
+  // most components, primary or secondary, will default to the "main" attribute of their scheme object
   //
-  // primary or secondary can be forced on a component by color="primary" prop
-  //
+  // primary or secondary can be forced on a component by a prop, e.g. color="primary"
+  // there are other scheme objects from material UI to further customize if need be (error, success, etc)
   // https://material-ui.com/customization/palette/
 
   palette: {
-    //
     primary: {
       // the following values are from the main site
       main: "#dec3fa", // button background-color
@@ -29,8 +28,8 @@ const theme = createMuiTheme({
       dark: "#d5b13c", // button border color
     },
   },
-  //these customise some typographic components
-  //for most others our site simply uses the Mui defaults
+  // these customise some typographic components
+  // for most others our site simply uses the Mui defaults
   //
   // typography components are called in this fashion <Typography variant="h1">SomeText</Typography>
   //
@@ -56,11 +55,11 @@ const theme = createMuiTheme({
 });
 
 //what the rest of this file is:
-//before we export the theme (at the bottom of the file) we adjust/override
-//further the theme object returned by the function call above
+//before we export the theme (at the bottom of the file) we override
+//custom values on the theme object returned by the function call above
 
 //Each of these components could receive any of these values as props on call
-//as in e.g. for MuiButton below we could individuall call <Button disableElevation={true} variant="contained" >
+//e.g. for MuiButton below we could individually call <Button disableElevation={true} variant="contained">Some Button Text</Button>
 //
 //this theme.props here makes each of these components ALWAYS receive
 //these props without that being explicitly called each time we use it
@@ -93,9 +92,10 @@ theme.props = {
 };
 
 //this is all simple css values (in jsx syntax)
-//this forces itself on the cascade as if it were in a stylsheet with !important indicated
+//this forces itself on the cascade as if it were in a stylesheet with !important indicated
 //to make sure it always overrides any other styling and thus becomes a default behaviour of the indicated component
 theme.overrides = {
+  // there is api documentation for each type of component, e.g. https://material-ui.com/api/button/
   MuiButton: {
     root: {
       borderRadius: 30,
