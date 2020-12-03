@@ -73,9 +73,12 @@ theme.props = {
     // this is a material button style - it means every button will have a border and be slightly rounded etc
     variant: "contained",
   },
-  // possible refactor here
   MuiLink: {
+    // this ensures that the text color of the link will be the same as it's parent's text value
+    // (essentially so it will match the surrounding text)
     color: "inherit",
+    // this changes the default MUI component returned by <Link> to an underlined link by default
+    // more detail here: https://material-ui.com/api/link/
     underline: "always",
   },
   // this is the navbar
@@ -132,7 +135,6 @@ theme.overrides = {
       },
     },
   },
-  // this may need a refactor into a specialized button if the compiled html becomes an <a> tag
   MuiLink: {
     root: {
       fontFamily: theme.typography.fontFamily,
@@ -140,30 +142,34 @@ theme.overrides = {
     underlineAlways: {
       color: theme.palette.text.primary,
       textDecorationColor: "transparent",
+      // this creates the yellow underline on links
       borderBottomColor: theme.palette.secondary.light,
       borderBottom: ".2rem solid",
+      // this creates the effect of a yellow highlight on hovered links
       "&:hover": {
         backgroundColor: theme.palette.secondary.light,
         textDecorationColor: theme.palette.secondary.light,
       },
+      // this creates the effect of a yellow highlight on focused links
       "&:focus": {
         backgroundColor: theme.palette.secondary.light,
         textDecorationColor: theme.palette.secondary.light,
       },
     },
-    underlineNone: {
-      color: "#fff",
-      textTransform: "uppercase",
-      fontSize: "13px",
-      padding: "1.7em 1em",
-      letterSpacing: "0.05rem",
-      "&:hover": {
-        backgroundColor: "#6c4097",
-      },
-      "&:focus": {
-        backgroundColor: "#6c4097",
-      },
-    },
+    //
+    // underlineNone: {
+    //   color: "#fff",
+    //   textTransform: "uppercase",
+    //   fontSize: "13px",
+    //   padding: "1.7em 1em",
+    //   letterSpacing: "0.05rem",
+    //   "&:hover": {
+    //     backgroundColor: "#6c4097",
+    //   },
+    //   "&:focus": {
+    //     backgroundColor: "#6c4097",
+    //   },
+    // },
   },
   // this is the navbar
   MuiAppBar: {
