@@ -1,4 +1,4 @@
-import { Button, Input, Typography } from "@material-ui/core";
+import { Button, Input, Link, Typography } from "@material-ui/core";
 import React, { useState } from "react";
 import { firebaseAuth } from "../../firebase/firebase";
 import { updateStateOnChange } from "../../utilities/updateState";
@@ -29,6 +29,10 @@ const SignUp = () => {
       <Button color={"primary"} onClick={handleSignUp}>
         Sign Up
       </Button>
+      {/* <Typography>
+        If you already have an account{" "}
+        <Link onClick={() => alert("clicked")}>CLICK HERE</Link> to sign in
+      </Typography> */}
     </>
   );
 };
