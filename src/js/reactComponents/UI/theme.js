@@ -55,24 +55,46 @@ const theme = createMuiTheme({
   },
 });
 
+//what the rest of this file is:
+//before we export the theme (at the bottom of the file) we adjust/override
+//further the theme object returned by the function call above
+
+//Each of these components could receive any of these values as props on call
+//as in e.g. for MuiButton below we could individuall call <Button disableElevation={true} variant="contained" >
+//
+//this theme.props here makes each of these components ALWAYS receive
+//these props without that being explicitly called each time we use it
+//
+//this effectively makes all of these props default behaviour on our site
 theme.props = {
+  // there is api documentation for each type of component, e.g. https://material-ui.com/api/button/
   MuiButton: {
+    // this removes a drop shadow elevation effect from buttons
     disableElevation: true,
+    // this is a material button style - it means every button will have a border and be slightly rounded etc
     variant: "contained",
   },
+  // possible refactor here
   MuiLink: {
     color: "inherit",
     underline: "always",
   },
+  // this is the navbar
   MuiAppBar: {
+    // this fixes the app bar always at the top of the screen, even if the user scrolls down
     position: "fixed",
+    // this also takes away drop shadow elevation effect
     elevation: 0,
   },
   MuiToolBar: {
+    // this takes away added padding from the left and right side of the parent component that contains the app bar
     disableGutters: true,
   },
 };
 
+//this is all simple css values (in jsx syntax)
+//this forces itself on the cascade as if it were in a stylsheet with !important indicated
+//to make sure it always overrides any other styling and thus becomes a default behaviour of the indicated component
 theme.overrides = {
   MuiButton: {
     root: {
@@ -82,6 +104,7 @@ theme.overrides = {
       margin: "1rem",
     },
     containedPrimary: {
+      //we have access to any values that were defined in the initial call to createMuiTheme above
       backgroundColor: theme.palette.primary.main,
       borderColor: theme.palette.primary.light,
       "&:hover": {
@@ -142,6 +165,7 @@ theme.overrides = {
       },
     },
   },
+  // this is the navbar
   MuiAppBar: {
     root: {
       height: "3.5rem",
