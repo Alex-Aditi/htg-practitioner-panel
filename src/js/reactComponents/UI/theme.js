@@ -1,7 +1,22 @@
 import { createMuiTheme } from "@material-ui/core";
 
+//this function takes an object with theme values as an argument
+// and then returns a new theme that overrides the default Mui theme;
+// this theme object is later provided as a prop to the themeProvider (see src\js\entrypoint.js)
+// where values are not specified here, the site uses the default MUi theme values;
+// https://material-ui.com/customization/theming/
+
 const theme = createMuiTheme({
+  // palette is the color scheme of the theme
+  // based on underlying MAterial design principles, some MUI components will use primary or secondary color scheme as a default
+  // most components, primary or secondary, will default to the main version of their scheme
+  //
+  // primary or secondary can be forced on a component by color="primary" prop
+  //
+  // https://material-ui.com/customization/palette/
+
   palette: {
+    //
     primary: {
       // the following values are from the main site
       main: "#dec3fa", // button background-color
@@ -14,6 +29,13 @@ const theme = createMuiTheme({
       dark: "#d5b13c", // button border color
     },
   },
+  //these customise some typographic components
+  //for most others our site simply uses the Mui defaults
+  //
+  // typography components are called in this fashion <Typography variant="h1">SomeText</Typography>
+  //
+  // https://material-ui.com/customization/typography/
+
   typography: {
     h1: {
       fontSize: "2.7 em",
