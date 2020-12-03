@@ -138,6 +138,7 @@ theme.overrides = {
   MuiLink: {
     root: {
       fontFamily: theme.typography.fontFamily,
+      cursor: "pointer"
     },
     underlineAlways: {
       color: theme.palette.text.primary,
