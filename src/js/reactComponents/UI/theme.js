@@ -156,20 +156,6 @@ theme.overrides = {
         textDecorationColor: theme.palette.secondary.light,
       },
     },
-    //
-    // underlineNone: {
-    //   color: "#fff",
-    //   textTransform: "uppercase",
-    //   fontSize: "13px",
-    //   padding: "1.7em 1em",
-    //   letterSpacing: "0.05rem",
-    //   "&:hover": {
-    //     backgroundColor: "#6c4097",
-    //   },
-    //   "&:focus": {
-    //     backgroundColor: "#6c4097",
-    //   },
-    // },
   },
   // this is the navbar
   MuiAppBar: {
