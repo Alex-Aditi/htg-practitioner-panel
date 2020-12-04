@@ -26,7 +26,7 @@ const SignUp = () => {
         value={newUserPassword}
         onChange={updateStateOnChange(setNewUserPassword)}
       ></Input>
-      <Button color={"primary"} onClick={handleSignUp}>
+      <Button color="primary" onClick={handleSignUp}>
         Sign Up
       </Button>
       {/* <Typography>
