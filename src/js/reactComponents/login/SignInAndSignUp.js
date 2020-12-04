@@ -6,9 +6,7 @@ import SignUp from "./SignUp";
 const SignInAndSignUp = () => {
   return (
     <>
-      <Typography variant="h1" id="announce">
-        Welcome to the Practitioner Panel
-      </Typography>
+      <Typography variant="h1">Welcome to the Practitioner Panel</Typography>
       <SignUp />
       <br></br>
       <SignIn />
