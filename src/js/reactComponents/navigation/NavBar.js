@@ -32,7 +32,7 @@ export default function NavBar() {
   const classes = useStyles();
 
   return (
-    <div>
+    <>
       <Grid container direction="row" alignContent="center" alignItems="center">
         <Grid item xs={12}>
           <AppBar position="sticky">
@@ -59,6 +59,6 @@ export default function NavBar() {
           </AppBar>
         </Grid>
       </Grid>
-    </div>
+    </>
   );
 }
