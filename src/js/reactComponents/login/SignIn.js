@@ -29,7 +29,7 @@ const SignIn = () => {
         value={returningUserPassword}
         onChange={updateStateOnChange(setReturningUserPassword)}
       ></Input>
-      <Button color={"primary"} onClick={handleSignIn}>
+      <Button color="primary" onClick={handleSignIn}>
         Sign In
       </Button>
     </>
