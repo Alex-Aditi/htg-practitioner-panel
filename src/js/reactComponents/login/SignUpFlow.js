@@ -16,7 +16,7 @@ const SignUpFlow = () => {
       alignItems="center"
       justify="center"
       style={{
-        background: `url(${lavenderJpg}) no-repeat top center fixed`, // image now zooms in too much
+        background: `url(${lavenderJpg}) no-repeat top center/200% fixed`, 
         height: "100vh" // scrollbar now shows up
       }}
     >
