@@ -70,10 +70,10 @@ const staticText = {
   WhyText: ["Why Does This Exist?", "Pourquoi cette ressource existe-t-elle?"],
   AboutText: ["About Us", "À propos"],
   ResourcesText: ["Resources", "Ressources"],
-  CopyrightText: [
-    "Copyright © CURE Concordia 2020, Inc. All rights reserved.",
-    "Droit d'auteur © CURE Concordia 2020, Inc. Tous droits réservés.",
-  ],
+  // CopyrightText: [
+  //   "Copyright © CURE Concordia 2020, Inc. All rights reserved.",
+  //   "Droit d'auteur © CURE Concordia 2020, Inc. Tous droits réservés.",
+  // ],
 };
 
 export default function Footer() {
@@ -88,9 +88,9 @@ export default function Footer() {
             </ul>
           </Grid>
         </Grid>
-        <Grid container item xs={12}>
+        {/* <Grid container item xs={12}>
           <Copyright>{staticText.CopyrightText[1]}</Copyright>
-        </Grid>
+        </Grid> */}
       </Grid>
     </Grid>
   );
