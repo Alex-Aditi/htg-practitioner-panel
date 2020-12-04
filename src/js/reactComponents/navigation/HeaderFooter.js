@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "./Footer";
+// import Footer from "./Footer";
 import NavBar from "./NavBar";
 
 // potentially refactor Footer into this file
@@ -8,7 +8,7 @@ const HeaderFooter = ({ children }) => {
     <>
       <NavBar />
       {children}
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
