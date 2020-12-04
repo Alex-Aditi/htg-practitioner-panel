@@ -16,7 +16,8 @@ const SignUpFlow = () => {
       alignItems="center"
       justify="center"
       style={{
-        background: `url(${lavenderJpg}) no-repeat top center/100% fixed`,
+        background: `url(${lavenderJpg}) no-repeat top center fixed`, // image now zooms in too much
+        height: "100vh" // scrollbar now shows up
       }}
     >
       <Grid item xs={12}>
