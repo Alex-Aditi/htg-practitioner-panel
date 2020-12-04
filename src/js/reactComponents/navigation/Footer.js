@@ -29,25 +29,25 @@ import { withStyles, Link, Grid, Typography } from "@material-ui/core";
 //   padding-top: 0;
 // }
 
-const StyledLink = withStyles({
-  root: {
-    fontSize: "11px",
-    color: "#000000",
-    textDecoration: "none",
-    borderBottom: "0px transparent",
-    backgroundColor: "none",
-    textTransform: "none",
-    display: "block",
-    padding: "1.5em",
-    marginTop: "1em",
-    "&:hover": {
-      background: "none",
-      backgroundSize: 0,
-      backgroundColor: "none",
-      textDecoration: "none",
-    },
-  },
-})(Link);
+// const StyledLink = withStyles({
+//   root: {
+//     fontSize: "11px",
+//     color: "#000000",
+//     textDecoration: "none",
+//     borderBottom: "0px transparent",
+//     backgroundColor: "none",
+//     textTransform: "none",
+//     display: "block",
+//     padding: "1.5em",
+//     marginTop: "1em",
+//     "&:hover": {
+//       background: "none",
+//       backgroundSize: 0,
+//       backgroundColor: "none",
+//       textDecoration: "none",
+//     },
+//   },
+// })(Link);
 
 const Copyright = withStyles({
   root: {
@@ -75,7 +75,6 @@ const staticText = {
     "Droit d'auteur © CURE Concordia 2020, Inc. Tous droits réservés.",
   ],
 };
-
 
 export default function Footer() {
   return (
