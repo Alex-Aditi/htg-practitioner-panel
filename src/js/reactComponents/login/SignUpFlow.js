@@ -1,8 +1,6 @@
 import { Grid } from "@material-ui/core";
 
 import React from "react";
-// import SignIn from "./SignIn";
-// import SignUp from "./SignUp";
 import Card from "../UI/customComponents/SquareCard";
 
 import lavenderJpg from "../../../static/img/header.jpg";
@@ -16,8 +14,8 @@ const SignUpFlow = () => {
       alignItems="center"
       justify="center"
       style={{
-        background: `url(${lavenderJpg}) no-repeat top center/200% fixed`, 
-        height: "100vh" // scrollbar now shows up
+        background: `url(${lavenderJpg}) no-repeat top center/200% fixed`,
+        height: "100vh", // scrollbar now shows up
       }}
     >
       <Grid item xs={12}>
