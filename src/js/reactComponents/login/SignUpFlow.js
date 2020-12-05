@@ -1,9 +1,7 @@
 import { Grid } from "@material-ui/core";
 
 import React from "react";
-// import SignIn from "./SignIn";
-// import SignUp from "./SignUp";
-import Card from "../UI/customComponents/SquareCard";
+import SquareCard from "../UI/customComponents/SquareCard";
 
 import lavenderJpg from "../../../static/img/header.jpg";
 import SignInAndSignUp from "./SignInAndSignUp";
@@ -16,14 +14,15 @@ const SignUpFlow = () => {
       alignItems="center"
       justify="center"
       style={{
-        background: `url(${lavenderJpg}) no-repeat top center/100% fixed`,
+        background: `url(${lavenderJpg}) no-repeat top center/200% fixed`,
+        height: "100vh", // scrollbar now shows up
       }}
     >
       <Grid item xs={12}>
-        <Card>
+        <SquareCard>
           {/* we can load anything into this card based on state of signup actions of user */}
           <SignInAndSignUp />
-        </Card>
+        </SquareCard>
       </Grid>
     </Grid>
   );
