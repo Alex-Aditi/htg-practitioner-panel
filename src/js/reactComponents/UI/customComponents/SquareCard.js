@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Typography, makeStyles } from "@material-ui/core";
+import { Card, makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles({
   root: {
@@ -15,15 +15,12 @@ const useStyles = makeStyles({
   },
 });
 
-export default function SquareCard({ title, children }) {
+export default function SquareCard({ children }) {
   const classes = useStyles();
 
   return (
     <div>
       <Card className={classes.root} variant="outlined">
-        <Typography variant="h3" style={{ marginTop: 0 }}>
-          {title}
-        </Typography>
         {children}
       </Card>
     </div>
