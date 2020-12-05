@@ -1,7 +1,7 @@
 import { Grid } from "@material-ui/core";
 
 import React from "react";
-import Card from "../UI/customComponents/SquareCard";
+import SquareCard from "../UI/customComponents/SquareCard";
 
 import lavenderJpg from "../../../static/img/header.jpg";
 import SignInAndSignUp from "./SignInAndSignUp";
@@ -19,10 +19,10 @@ const SignUpFlow = () => {
       }}
     >
       <Grid item xs={12}>
-        <Card>
+        <SquareCard>
           {/* we can load anything into this card based on state of signup actions of user */}
           <SignInAndSignUp />
-        </Card>
+        </SquareCard>
       </Grid>
     </Grid>
   );
