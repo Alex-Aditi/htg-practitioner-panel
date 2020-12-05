@@ -10,8 +10,9 @@ const useStyles = makeStyles({
     color: "#000",
     textAlign: "left",
     letterSpacing: "0.05em",
-    padding: "0px 0px 2px 6px",
-  }
+    textTransform: "uppercase",
+    fontSize: "13px",
+  },
 });
 
 export default function ArrowBackward({ label, href }) {

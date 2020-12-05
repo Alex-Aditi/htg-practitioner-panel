@@ -11,7 +11,8 @@ const useStyles = makeStyles({
     color: "#000",
     textAlign: "right",
     letterSpacing: "0.05em",
-    padding: "2px 6px 0px 0px",
+    textTransform: "uppercase",
+    fontSize: "13px",
   },
 });
 
