@@ -11,13 +11,13 @@ const useStyles = makeStyles({
   }
 });
 
-export default function ArrowBackward({ text, href }) {
+export default function ArrowBackward({ label, href }) {
   const classes = useStyles();
   return (
     <StyledIcon href={href}>
       <Icon className="fas fa-arrow-left"></Icon>
       <Typography variant="h6" className={classes.root}>
-        {text}
+        {label}
       </Typography>
     </StyledIcon>
   );

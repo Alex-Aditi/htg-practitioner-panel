@@ -2,6 +2,9 @@ import React from "react";
 import { Icon, Typography, makeStyles } from "@material-ui/core";
 import StyledIcon from "./StyledIcon";
 
+// this component creates an arrow icon that is a link with a text label
+// 
+
 const useStyles = makeStyles({
   root: {
     color: "#000",
@@ -11,12 +14,12 @@ const useStyles = makeStyles({
   },
 });
 
-export default function ArrowForward({ text, href }) {
+export default function ArrowForward({ label, href }) {
   const classes = useStyles();
   return (
     <StyledIcon href={href}>
       <Typography variant="h6" className={classes.root}>
-        {text}
+        {label}
       </Typography>
       <Icon className="fas fa-arrow-right"></Icon>
     </StyledIcon>
