@@ -1,6 +1,8 @@
 import React from "react";
 import { Link, makeStyles } from "@material-ui/core";
 
+// This component adds yellow color and other styling to icons that it wraps
+
 // this creates a function that then creates a classes object in styledIcon below
 //calling classes.root in className of a component applies those styles to that component
 const useStyles = makeStyles({
