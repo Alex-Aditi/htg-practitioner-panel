@@ -11,7 +11,8 @@ const useStyles = makeStyles({
     fontSize: "1.2 em",
     textAlign: "left",
     fontWeight: "900",
-    display: "inline-flex",
+    display: "flex",
+    alignItems: "center",
     lineHeight: "2em",
     "&:hover": {
       background: "none",
