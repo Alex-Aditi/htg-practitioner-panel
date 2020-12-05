@@ -1,7 +1,7 @@
 import React from "react";
 import { Icon } from "@material-ui/core";
 import { Typography } from "@material-ui/core";
-import StyledIcon from './StyledIcon';
+import StyledIcon from "./StyledIcon";
 
 const textStyle = {
   color: "#000",

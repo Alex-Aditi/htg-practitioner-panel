@@ -1,8 +1,9 @@
 import React from "react";
-import { Link, withStyles } from "@material-ui/core";
-import clsx from 'clsx';
+import { Link, makeStyles } from "@material-ui/core";
 
-const styles = {
+// this creates a function that then creates a classes object in styledIcon below
+//calling classes.root in className of a component applies those styles to that component
+const useStyles = makeStyles({
   root: {
     color: "#f2c944",
     fontSize: "1.2 em",
@@ -17,15 +18,20 @@ const styles = {
       background: "none",
     },
   },
-};
+});
 
-function StyledIcon(props) {
-    const { classes, children, className, ...other } = props;
-    return (
-        <Link underline="none" className={clsx(classes.root, className)} {...other}>
-            {children}
-        </Link>
-    )
+function StyledIcon({ children, href }) {
+  const classes = useStyles();
+  return (
+    <Link
+      underline="none"
+      className={classes.root}
+      // for now this is href - it may chnge to be an onClick property
+      href={href}
+    >
+      {children}
+    </Link>
+  );
 }
 
-export default withStyles(styles)(StyledIcon);
+export default StyledIcon;

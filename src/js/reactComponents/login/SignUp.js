@@ -2,6 +2,8 @@ import { Button, Input, Link, Typography } from "@material-ui/core";
 import React, { useState } from "react";
 import { firebaseAuth } from "../../firebase/firebase";
 import { updateStateOnChange } from "../../utilities/updateState";
+import ArrowBackward from "../UI/customComponents/ArrowBackward";
+import ArrowForward from "../UI/customComponents/ArrowForward";
 
 const SignUp = () => {
   const [newUserEmail, setNewUserEmail] = useState();
@@ -33,6 +35,8 @@ const SignUp = () => {
         If you already have an account{" "}
         <Link onClick={() => alert("clicked")}>CLICK HERE</Link> to sign in
       </Typography> */}
+      {/* <ArrowForward text="Forward" /> */}
+      {/* <ArrowBackward text="Backward" /> */}
     </>
   );
 };
