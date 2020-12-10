@@ -30,7 +30,7 @@ const Form = () => {
     <Typography variant="h5">Social media platforms</Typography>
     <p>Short text input with option to add or delete more of its type</p>
     {/*  */}
-    <p>BAck/Next Button Group</p>
+    <p>Back/Next Button Group</p>
 
     {/* Section 3 */}
     <Typography variant="h3">Section 3: Professional Information</Typography>
@@ -47,7 +47,7 @@ const Form = () => {
     <Typography variant="h5">Associations</Typography>
     <p>Multiple choice inputs</p>
     {/*  */}
-    <p>BAck/Next Button Group</p>
+    <p>Back/Next Button Group</p>
 
     {/* Section 4 */}
     <Typography variant="h3">Section 4: Personal Information</Typography>
@@ -70,60 +70,60 @@ const Form = () => {
     <Typography variant="h5">Trans Identify</Typography>
     <p>Single choice inputs</p>
     {/*  */}
-    <p>BAck/Next Button Group</p>
+    <p>Back/Next Button Group</p>
 
     {/* Section 5 */}
     <Typography variant="h3">Section 5: Services</Typography>
     {/*  */}
-    <Typography variant="h5"></Typography>
-    <p></p>
+    <Typography variant="h5">Who do you provide services to?</Typography>
+    <p>Multiple choice inputs</p>
     {/*  */}
-    <Typography variant="h5"></Typography>
-    <p></p>
+    <Typography variant="h5">Your Treatment Approaches</Typography>
+    <p>Multiple choice inputs with "other" short text input</p>
     {/*  */}
-    <Typography variant="h5"></Typography>
-    <p></p>
+    <Typography variant="h5">Needs/Experiences</Typography>
+    <p>Multiple choice inputs with "other" short text input</p>
     {/*  */}
-    <Typography variant="h5"></Typography>
-    <p></p>
+    <Typography variant="h5">Address</Typography>
+    <p>Multiple short text inputs</p>
     {/*  */}
-    <Typography variant="h5"></Typography>
-    <p></p>
+    <Typography variant="h5">Fixed address?</Typography>
+    <p>Single choice input</p>
     {/*  */}
-    <Typography variant="h5"></Typography>
-    <p></p>
+    <Typography variant="h5">Remotely</Typography>
+    <p>Single choice input</p>
     {/*  */}
-    <Typography variant="h5"></Typography>
-    <p></p>
+    <Typography variant="h5">if remotely, how?</Typography>
+    <p>Multiple choice inputs with "other" short text input</p>
     {/*  */}
-    <Typography variant="h5"></Typography>
-    <p></p>
+    <Typography variant="h5">Accessible Facilities</Typography>
+    <p>Multiple choice inputs</p>
     {/*  */}
-    <Typography variant="h5"></Typography>
-    <p></p>
+    <Typography variant="h5">Hourly rate</Typography>
+    <p>Individual short text inputs</p>
     {/*  */}
-    <Typography variant="h5"></Typography>
-    <p></p>
+    <Typography variant="h5">Payment methods?</Typography>
+    <p>Multiple choice inputs</p>
     {/*  */}
-    <Typography variant="h5"></Typography>
-    <p></p>
+    <Typography variant="h5">Sliding scale?</Typography>
+    <p>Single choice input</p>
     {/*  */}
-    <Typography variant="h5"></Typography>
-    <p></p>
+    <Typography variant="h5">Barter/trade</Typography>
+    <p>Single choice input</p>
     {/*  */}
-    <Typography variant="h5"></Typography>
-    <p></p>
+    <Typography variant="h5">Insurance coverage</Typography>
+    <p>Single choice input</p>
     {/*  */}
-    <Typography variant="h5"></Typography>
-    <p></p>
+    <Typography variant="h5">Trans attestation letters</Typography>
+    <p>Single choice input</p>
     {/*  */}
-    <Typography variant="h5"></Typography>
-    <p></p>
+    <Typography variant="h5">personal bio</Typography>
+    <p>Long text input</p>
     {/*  */}
-    <Typography variant="h5"></Typography>
-    <p></p>
+    <Typography variant="h5">personal bio in french</Typography>
+    <p>Long text input</p>
     {/*  */}
-    <p>BAck/Next Button Group</p>
+    <p>Back/Next Button Group</p>
 
     {/* Section 6 */}
     <Typography variant="h3">Section 6: Review & Submit</Typography>
