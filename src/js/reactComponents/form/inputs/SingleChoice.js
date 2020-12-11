@@ -1,12 +1,13 @@
-import React from 'react';
+import { Typography } from "@material-ui/core";
+import React from "react";
 
-const  = ({ header }) => {
-    return (
-        <>
-            <Typography variant="h5">{header}</Typography>
-                <p></p>
-        </>
-    )
-}
+const SingleChoice = ({ header }) => {
+  return (
+    <>
+      <Typography variant="h5">{header}</Typography>
+      <p>Single choice inputs</p>
+    </>
+  );
+};
 
-export default ;
+export default SingleChoice;

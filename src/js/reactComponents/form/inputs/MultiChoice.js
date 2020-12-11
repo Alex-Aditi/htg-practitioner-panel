@@ -1,13 +1,13 @@
 import { Typography } from "@material-ui/core";
 import React from "react";
 
-const LongText = ({ header }) => {
+const MultiChoice = ({ header }) => {
   return (
     <>
       <Typography variant="h5">{header}</Typography>
-      <p>Long text input</p>
+      <p>Multiple choice inputs</p>
     </>
   );
 };
 
-export default LongText;
+export default MultiChoice;

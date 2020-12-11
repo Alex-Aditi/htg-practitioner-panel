@@ -1,12 +1,13 @@
-import React from 'react';
+import { Typography } from "@material-ui/core";
+import React from "react";
 
-const  = ({ header }) => {
-    return (
-        <>
-            <Typography variant="h5">{header}</Typography>
-                <p></p>
-        </>
-    )
-}
+const MultiShortText = ({ header }) => {
+  return (
+    <>
+      <Typography variant="h5">{header}</Typography>
+      <p>Multiple short text inputs</p>
+    </>
+  );
+};
 
-export default ;
+export default MultiShortText;
