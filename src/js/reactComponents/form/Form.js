@@ -47,28 +47,16 @@ const Form = () => {
       <Typography variant="h3">Section 4: Personal Information</Typography>
       {/*  */}
       <IndiShortText header="Ethnicity/Race" />
-      {/* <Typography variant="h5">Ethnicity/Race</Typography>
-      <p>Individual short text input</p> */}
       {/*  */}
       <IndiShortText header="Ethnicity/Race in French" />
-      {/* <Typography variant="h5">Ethnicity/Race in French</Typography>
-      <p>Individual short text input</p> */}
       {/*  */}
       <MultiChoiceOther header="Languages" />
-      {/* <Typography variant="h5">Languages</Typography>
-      <p>Multiple choice inputs with "other" short text input</p> */}
       {/*  */}
       <SingleChoiceOther header="Gender" />
-      {/* <Typography variant="h5">Gender</Typography>
-      <p>Single choice inputs with "other" short text input</p> */}
       {/*  */}
       <SingleChoice header="LGTBTQ2S+" />
-      {/* <Typography variant="h5">LGTBTQ2S+</Typography>
-      <p>Single choice inputs</p> */}
       {/*  */}
       <SingleChoice header="Trans Identify" />
-      {/* <Typography variant="h5">Trans Identify</Typography>
-      <p>Single choice inputs</p> */}
       {/*  */}
       <p>Back/Next Button Group</p>
 
