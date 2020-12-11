@@ -3,6 +3,8 @@ import { Typography } from "@material-ui/core";
 import React from "react";
 import IndiShortText from "./inputs/IndiShortText";
 import MultiShortText from "./inputs/MultiShortText";
+import MultiChoice from "./inputs/MultiChoice";
+import MultiChoiceMaybeShortText from "./inputs/MultiChoiceMaybeShortText";
 import ShortTextAddMore from "./inputs/ShortTextAddMore";
 
 const Form = () => {
@@ -31,18 +33,19 @@ const Form = () => {
       <Typography variant="h3">Section 3: Professional Information</Typography>
       {/*  */}
       <MultiChoiceMaybeShortText header="Professon Permit" />
-
       {/* <Typography variant="h5">Professon Permit</Typography>
       <p>
         Multiple choice inputs with conditional short text inputs depending on
         selections made
       </p> */}
       {/*  */}
-      <Typography variant="h5">Profession Not Regulated</Typography>
-      <p>Multiple choice inputs</p>
+      <MultiChoice header="Profession Not Regulated"/>
+      {/* <Typography variant="h5">Profession Not Regulated</Typography>
+      <p>Multiple choice inputs</p> */}
       {/*  */}
-      <Typography variant="h5">Associations</Typography>
-      <p>Multiple choice inputs</p>
+      <MultiChoice header="Associations"/>
+      {/* <Typography variant="h5">Associations</Typography>
+      <p>Multiple choice inputs</p> */}
       {/*  */}
       <p>Back/Next Button Group</p>
 
