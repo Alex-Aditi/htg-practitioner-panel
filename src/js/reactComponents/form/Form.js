@@ -106,7 +106,7 @@ const Form = () => {
       {/* Section 7: Thank You & Confirmation */}
       <Typography variant="h3">Section 7: Thank You & Confirmation</Typography>
       {/*  */}
-      <Typography variant="h5">Connfirmation</Typography>
+      <Typography variant="h5">Confirmation</Typography>
       <p>text block to read</p>
       {/*  */}
       <Typography variant="h5">Thank You</Typography>
