@@ -30,11 +30,13 @@ const Form = () => {
       {/* Section 3: Professional Information */}
       <Typography variant="h3">Section 3: Professional Information</Typography>
       {/*  */}
-      <Typography variant="h5">Professon Permit</Typography>
+      <MultiChoiceMaybeShortText header="Professon Permit" />
+
+      {/* <Typography variant="h5">Professon Permit</Typography>
       <p>
         Multiple choice inputs with conditional short text inputs depending on
         selections made
-      </p>
+      </p> */}
       {/*  */}
       <Typography variant="h5">Profession Not Regulated</Typography>
       <p>Multiple choice inputs</p>
