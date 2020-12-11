@@ -4,6 +4,9 @@ import React from "react";
 import IndiShortText from "./inputs/IndiShortText";
 import MultiShortText from "./inputs/MultiShortText";
 import MultiChoice from "./inputs/MultiChoice";
+import MultiChoiceOther from "./inputs/MultiChoiceOther";
+import SingleChoiceOther from "./inputs/SingleChoiceOther";
+import SingleChoice from "./inputs/SingleChoice";
 import MultiChoiceMaybeShortText from "./inputs/MultiChoiceMaybeShortText";
 import ShortTextAddMore from "./inputs/ShortTextAddMore";
 
@@ -40,26 +43,32 @@ const Form = () => {
       {/*  */}
       <p>Back/Next Button Group</p>
 
-      {/* Section 4: PErsonal Informatuion */}
+      {/* Section 4: Personal Informatuion */}
       <Typography variant="h3">Section 4: Personal Information</Typography>
       {/*  */}
-      <Typography variant="h5">Ethnicity/Race</Typography>
-      <p>Individual short text input</p>
+      <IndiShortText header="Ethnicity/Race" />
+      {/* <Typography variant="h5">Ethnicity/Race</Typography>
+      <p>Individual short text input</p> */}
       {/*  */}
-      <Typography variant="h5">Ethnicity/Race in French</Typography>
-      <p>Individual short text input</p>
+      <IndiShortText header="Ethnicity/Race in French" />
+      {/* <Typography variant="h5">Ethnicity/Race in French</Typography>
+      <p>Individual short text input</p> */}
       {/*  */}
-      <Typography variant="h5">Languages</Typography>
-      <p>Multiple choice inputs with "other" short text input</p>
+      <MultiChoiceOther header="Languages" />
+      {/* <Typography variant="h5">Languages</Typography>
+      <p>Multiple choice inputs with "other" short text input</p> */}
       {/*  */}
-      <Typography variant="h5">Gender</Typography>
-      <p>Single choice inputs with "other" short text input</p>
+      <SingleChoiceOther header="Gender" />
+      {/* <Typography variant="h5">Gender</Typography>
+      <p>Single choice inputs with "other" short text input</p> */}
       {/*  */}
-      <Typography variant="h5">LGTBTQ2S+</Typography>
-      <p>Single choice inputs</p>
+      <SingleChoice header="LGTBTQ2S+" />
+      {/* <Typography variant="h5">LGTBTQ2S+</Typography>
+      <p>Single choice inputs</p> */}
       {/*  */}
-      <Typography variant="h5">Trans Identify</Typography>
-      <p>Single choice inputs</p>
+      <SingleChoice header="Trans Identify" />
+      {/* <Typography variant="h5">Trans Identify</Typography>
+      <p>Single choice inputs</p> */}
       {/*  */}
       <p>Back/Next Button Group</p>
 
