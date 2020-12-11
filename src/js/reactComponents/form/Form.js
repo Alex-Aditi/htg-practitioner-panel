@@ -3,7 +3,8 @@ import { Typography } from "@material-ui/core";
 import React from "react";
 
 const Form = () => {
-  <>
+  return (
+    <>
     {/* Section 1 */}
     <Typography variant="h3">Section 1: Title</Typography>
     {/*  */}
@@ -138,7 +139,9 @@ const Form = () => {
     <Typography variant="h5">Thank You</Typography>
     <p>text block to read</p>
     {/*  */}
-  </>;
+  </>
+  )
+ 
 };
 
 export default Form;
