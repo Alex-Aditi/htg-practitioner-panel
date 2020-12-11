@@ -18,25 +18,11 @@ const Form = () => {
 
       {/* Section 2 */}
       <Typography variant="h3">Section 2: Contact Info</Typography>
-      {/*  */}
-      {/* <Typography variant="h5">Name</Typography>
-    <p>Multiple short text inputs</p> */}
+
       <MultiShortText header="Name" />
-      {/*  */}
-      {/* <Typography variant="h5">Email</Typography>
-    <p>Individual short text input</p> */}
       <IndiShortText header="Email" />
-      {/*  */}
-      {/* <Typography variant="h5">Phone #</Typography>
-      <p>Multiple short text inputs</p> */}
       <MultiShortText header="Phone #" />
-      {/*  */}
-      {/* <Typography variant="h5">Website</Typography>
-      <p>Individual short text input</p> */}
       <IndiShortText header="Website" />
-      {/*  */}
-      {/* <Typography variant="h5">Social media platforms</Typography>
-      <p>Short text input with option to add or delete more of its type</p> */}
       <ShortTextAddMore header="Social media platforms" />
       {/*  */}
       <p>Back/Next Button Group</p>
