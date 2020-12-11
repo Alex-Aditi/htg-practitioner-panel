@@ -8,7 +8,7 @@ import ShortTextAddMore from "./inputs/ShortTextAddMore";
 const Form = () => {
   return (
     <>
-      {/* Section 1 */}
+      {/* Section 1: Title */}
       <Typography variant="h3">Section 1: Title</Typography>
       {/*  */}
       <Typography variant="h5">Professional Guidelines</Typography>
@@ -16,7 +16,7 @@ const Form = () => {
       {/*  */}
       <p>Next Button</p>
 
-      {/* Section 2 */}
+      {/* Section 2: Contact Info */}
       <Typography variant="h3">Section 2: Contact Info</Typography>
 
       <MultiShortText header="Name" />
@@ -27,7 +27,7 @@ const Form = () => {
       {/*  */}
       <p>Back/Next Button Group</p>
 
-      {/* Section 3 */}
+      {/* Section 3: Professional Information */}
       <Typography variant="h3">Section 3: Professional Information</Typography>
       {/*  */}
       <Typography variant="h5">Professon Permit</Typography>
@@ -44,7 +44,7 @@ const Form = () => {
       {/*  */}
       <p>Back/Next Button Group</p>
 
-      {/* Section 4 */}
+      {/* Section 4: PErsonal Informatuion */}
       <Typography variant="h3">Section 4: Personal Information</Typography>
       {/*  */}
       <Typography variant="h5">Ethnicity/Race</Typography>
@@ -67,7 +67,7 @@ const Form = () => {
       {/*  */}
       <p>Back/Next Button Group</p>
 
-      {/* Section 5 */}
+      {/* Section 5: Services */}
       <Typography variant="h3">Section 5: Services</Typography>
       {/*  */}
       <Typography variant="h5">Who do you provide services to?</Typography>
@@ -120,11 +120,12 @@ const Form = () => {
       {/*  */}
       <p>Back/Next Button Group</p>
 
-      {/* Section 6 */}
+      {/* Section 6:Review & Submit */}
       <Typography variant="h3">Section 6: Review & Submit</Typography>
       {/*  */}
       <p>Submit Button Group</p>
 
+      {/* Section 7: Thank You & Confirmation */}
       <Typography variant="h3">Section 7: Thank You & Confirmation</Typography>
       {/*  */}
       <Typography variant="h5">Connfirmation</Typography>
