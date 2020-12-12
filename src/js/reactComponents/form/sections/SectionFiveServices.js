@@ -6,8 +6,9 @@ import MultiChoice from "../inputs/MultiChoice";
 import MultiChoiceOther from "../inputs/MultiChoiceOther";
 import MultiShortText from "../inputs/MultiShortText";
 import SingleChoice from "../inputs/SingleChoice";
+import NextBackButtonGroup from "./buttonGroup/NextBackButtonGroup";
 
-function SectionFiveServices() {
+function SectionFiveServices({ nextSection, prevSection }) {
   return (
     <>
       <Typography variant="h3">Section 5: Services</Typography>
@@ -44,7 +45,10 @@ function SectionFiveServices() {
       {/*  */}
       <LongText header="personal bio in french" />
       {/*  */}
-      <p>Back/Next Button Group</p>
+      <NextBackButtonGroup
+        nextSection={nextSection}
+        prevSection={prevSection}
+      />
     </>
   );
 }

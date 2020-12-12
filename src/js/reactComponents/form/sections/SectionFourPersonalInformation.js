@@ -4,8 +4,9 @@ import IndiShortText from "../inputs/IndiShortText";
 import MultiChoiceOther from "../inputs/MultiChoiceOther";
 import SingleChoice from "../inputs/SingleChoice";
 import SingleChoiceOther from "../inputs/SingleChoiceOther";
+import NextBackButtonGroup from "./buttonGroup/NextBackButtonGroup";
 
-function SectionFourPersonalInformation() {
+function SectionFourPersonalInformation({ nextSection, prevSection }) {
   return (
     <>
       <Typography variant="h3">Section 4: Personal Information</Typography>
@@ -22,7 +23,10 @@ function SectionFourPersonalInformation() {
       {/*  */}
       <SingleChoice header="Trans Identify" />
       {/*  */}
-      <p>Back/Next Button Group</p>
+      <NextBackButtonGroup
+        nextSection={nextSection}
+        prevSection={prevSection}
+      />
     </>
   );
 }

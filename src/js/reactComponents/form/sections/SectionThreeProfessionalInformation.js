@@ -2,8 +2,9 @@ import { Typography } from "@material-ui/core";
 import React from "react";
 import MultiChoice from "../inputs/MultiChoice";
 import MultiChoiceMaybeShortText from "../inputs/MultiChoiceMaybeShortText";
+import NextBackButtonGroup from "./buttonGroup/NextBackButtonGroup";
 
-function SectionThreeProfessionalInformation() {
+function SectionThreeProfessionalInformation({ nextSection, prevSection }) {
   return (
     <>
       <Typography variant="h3">Section 3: Professional Information</Typography>
@@ -14,7 +15,10 @@ function SectionThreeProfessionalInformation() {
       {/*  */}
       <MultiChoice header="Associations" />
       {/*  */}
-      <p>Back/Next Button Group</p>
+      <NextBackButtonGroup
+        nextSection={nextSection}
+        prevSection={prevSection}
+      />
     </>
   );
 }
