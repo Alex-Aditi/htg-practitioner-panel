@@ -25,7 +25,9 @@ const Form = () => {
       direction="column"
       alignItems="center"
       justify="center"
+      // eventually adjust centering to be standard across sections
       >
+      <Grid item xs={12}>
       {currentSection === 1 && <SectionOneIntro nextSection={nextSection} />}
       {currentSection === 2 && (
         <SectionTwoContactInfo
@@ -63,6 +65,7 @@ const Form = () => {
           prevSection={prevSection}
         />
       )}
+      </Grid>
     </Grid>
   );
 };
