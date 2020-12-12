@@ -1,3 +1,5 @@
+import { Grid } from "@material-ui/core";
+
 import React, { useContext } from "react";
 import SectionOneIntro from "./sections/SectionOneIntro";
 import SectionTwoContactInfo from "./sections/SectionTwoContactInfo";
@@ -18,7 +20,12 @@ const Form = () => {
     FormSectionStateContext
   );
   return (
-    <>
+    <Grid 
+      container
+      direction="column"
+      alignItems="center"
+      justify="center"
+      >
       {currentSection === 1 && <SectionOneIntro nextSection={nextSection} />}
       {currentSection === 2 && (
         <SectionTwoContactInfo
@@ -56,7 +63,7 @@ const Form = () => {
           prevSection={prevSection}
         />
       )}
-    </>
+    </Grid>
   );
 };
 
