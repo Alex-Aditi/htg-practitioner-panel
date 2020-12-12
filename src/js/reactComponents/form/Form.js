@@ -52,7 +52,10 @@ const Form = () => {
       />
     )}
     {currentSection === 7 && (
-      <SectionSevenThankYouAndConfirmation />
+      <SectionSevenThankYouAndConfirmation 
+      /* we will delete this later, for testing purposes we will use this to go back */
+      prevSection={prevSection}
+      />
     )}
     
     </>
