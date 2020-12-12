@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import SectionOneIntro from "./sections/SectionOneIntro";
 import SectionTwoContactInfo from "./sections/SectionTwoContactInfo";
 import SectionThreeProfessionalInformation from "./sections/SectionThreeProfessionalInformation";
@@ -6,14 +6,17 @@ import SectionFourPersonalInformation from "./sections/SectionFourPersonalInform
 import SectionFiveServices from "./sections/SectionFiveServices";
 import SectionSixReviewAndSubmit from "./sections/SectionSixReviewAndSubmit";
 import SectionSevenThankYouAndConfirmation from "./sections/SectionSevenThankYouAndConfirmation";
+import { FormSectionStateContext } from "../providers/FormSectionStateProvider";
 
 const Form = () => {
-  const [currentSection, setCurrentSection] = useState(1);
+  // const [currentSection, setCurrentSection] = useState(1);
 
-  const nextSection = () => setCurrentSection(currentSection + 1);
+  // const nextSection = () => setCurrentSection(currentSection + 1);
 
-  const prevSection = () => setCurrentSection(currentSection - 1);
-
+  // const prevSection = () => setCurrentSection(currentSection - 1);
+  const { currentSection, nextSection, prevSection } = useContext(
+    FormSectionStateContext
+  );
   return (
     <>
       {currentSection === 1 && <SectionOneIntro nextSection={nextSection} />}
