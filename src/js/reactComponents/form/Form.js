@@ -9,25 +9,47 @@ import SectionSevenThankYouAndConfirmation from "./sections/SectionSevenThankYou
 
 const Form = () => {
   const [currentSection, setCurrentSection] = useState(1);
+
+  const nextSection = () => setCurrentSection(currentSection + 1);
+
+  const prevSection = () => setCurrentSection(currentSection - 1);
+
   return (
     <>
     {currentSection === 1 && (
-      <SectionOneIntro />
+      <SectionOneIntro 
+      nextSection={nextSection} 
+      />
     )}
     {currentSection === 2 && (
-      <SectionTwoContactInfo />
+      <SectionTwoContactInfo 
+      nextSection={nextSection} 
+      prevSection={prevSection}
+      />
     )}
     {currentSection === 3 && (
-      <SectionThreeProfessionalInformation />
+      <SectionThreeProfessionalInformation 
+      nextSection={nextSection} 
+      prevSection={prevSection}
+      />
     )}
     {currentSection === 4 && (
-      <SectionFourPersonalInformation />
+      <SectionFourPersonalInformation 
+      nextSection={nextSection} 
+      prevSection={prevSection}
+      />
     )}
     {currentSection === 5 && (
-      <SectionFiveServices />
+      <SectionFiveServices 
+      nextSection={nextSection} 
+      prevSection={prevSection}
+      />
     )}
     {currentSection === 6 && (
-      <SectionSixReviewAndSubmit />
+      <SectionSixReviewAndSubmit 
+      nextSection={nextSection} 
+      prevSection={prevSection}
+      />
     )}
     {currentSection === 7 && (
       <SectionSevenThankYouAndConfirmation />
