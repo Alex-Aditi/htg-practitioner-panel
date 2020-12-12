@@ -8,15 +8,31 @@ import SectionSixReviewAndSubmit from "./sections/SectionSixReviewAndSubmit";
 import SectionSevenThankYouAndConfirmation from "./sections/SectionSevenThankYouAndConfirmation";
 
 const Form = () => {
+  let currentSection = Math.floor(Math.random() * 7) + 1;
   return (
     <>
+    {currentSection === 1 && (
       <SectionOneIntro />
+    )}
+    {currentSection === 2 && (
       <SectionTwoContactInfo />
+    )}
+    {currentSection === 3 && (
       <SectionThreeProfessionalInformation />
+    )}
+    {currentSection === 4 && (
       <SectionFourPersonalInformation />
+    )}
+    {currentSection === 5 && (
       <SectionFiveServices />
+    )}
+    {currentSection === 6 && (
       <SectionSixReviewAndSubmit />
+    )}
+    {currentSection === 7 && (
       <SectionSevenThankYouAndConfirmation />
+    )}
+    
     </>
   );
 };
