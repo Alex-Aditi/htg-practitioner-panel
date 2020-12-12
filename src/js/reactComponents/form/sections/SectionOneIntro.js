@@ -1,5 +1,6 @@
 import { Button, Typography } from "@material-ui/core";
 import React from "react";
+import NextButton from "./buttonGroup/NextButton";
 
 function SectionOneIntro({ nextSection }) {
   return (
@@ -9,9 +10,7 @@ function SectionOneIntro({ nextSection }) {
       <Typography variant="h5">Professional Guidelines</Typography>
       <p>text block to read</p>
       {/*  */}
-      <Button onClick={nextSection} color="primary">
-        Next Section
-      </Button>
+      <NextButton nextFunc={nextSection} />
     </>
   );
 }

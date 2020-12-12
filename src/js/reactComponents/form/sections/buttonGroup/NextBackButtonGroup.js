@@ -5,8 +5,8 @@ import PrevButton from "./PrevButton";
 function NextBackButtonGroup({ nextSection, prevSection }) {
   return (
     <>
-      <NextButton nextFunc={nextSection} />
       <PrevButton prevFunc={prevSection} />
+      <NextButton nextFunc={nextSection} />
     </>
   );
 }
