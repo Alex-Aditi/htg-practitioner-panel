@@ -16,48 +16,43 @@ const Form = () => {
 
   return (
     <>
-    {currentSection === 1 && (
-      <SectionOneIntro 
-      nextSection={nextSection} 
-      />
-    )}
-    {currentSection === 2 && (
-      <SectionTwoContactInfo 
-      nextSection={nextSection} 
-      prevSection={prevSection}
-      />
-    )}
-    {currentSection === 3 && (
-      <SectionThreeProfessionalInformation 
-      nextSection={nextSection} 
-      prevSection={prevSection}
-      />
-    )}
-    {currentSection === 4 && (
-      <SectionFourPersonalInformation 
-      nextSection={nextSection} 
-      prevSection={prevSection}
-      />
-    )}
-    {currentSection === 5 && (
-      <SectionFiveServices 
-      nextSection={nextSection} 
-      prevSection={prevSection}
-      />
-    )}
-    {currentSection === 6 && (
-      <SectionSixReviewAndSubmit 
-      nextSection={nextSection} 
-      prevSection={prevSection}
-      />
-    )}
-    {currentSection === 7 && (
-      <SectionSevenThankYouAndConfirmation 
-      /* we will delete this later, for testing purposes we will use this to go back */
-      prevSection={prevSection}
-      />
-    )}
-    
+      {currentSection === 1 && <SectionOneIntro nextSection={nextSection} />}
+      {currentSection === 2 && (
+        <SectionTwoContactInfo
+          nextSection={nextSection}
+          prevSection={prevSection}
+        />
+      )}
+      {currentSection === 3 && (
+        <SectionThreeProfessionalInformation
+          nextSection={nextSection}
+          prevSection={prevSection}
+        />
+      )}
+      {currentSection === 4 && (
+        <SectionFourPersonalInformation
+          nextSection={nextSection}
+          prevSection={prevSection}
+        />
+      )}
+      {currentSection === 5 && (
+        <SectionFiveServices
+          nextSection={nextSection}
+          prevSection={prevSection}
+        />
+      )}
+      {currentSection === 6 && (
+        <SectionSixReviewAndSubmit
+          nextSection={nextSection}
+          prevSection={prevSection}
+        />
+      )}
+      {currentSection === 7 && (
+        <SectionSevenThankYouAndConfirmation
+          /* we will delete this later, for testing purposes we will use this to go back */
+          prevSection={prevSection}
+        />
+      )}
     </>
   );
 };

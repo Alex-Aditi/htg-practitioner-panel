@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function NextBackButtonGroup() {
-    return (
-        <div>
-            
-        </div>
-    )
+  return <div></div>;
 }
 
-export default NextBackButtonGroup
+export default NextBackButtonGroup;
