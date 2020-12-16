@@ -1,4 +1,9 @@
+// This object allows us to communicate with Firebase
+// We import it in firebase.js and this sets up our access to Firebase services
+// Services are: User authentication, database management [Cloud Firestore], and storage
+// You can find the config for your version of this project in your Firebase console
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+// Copy/paste your object below 
 const firebaseConfig = {
   apiKey: "AIzaSyDKJKxFyAXoGDwOIMRAfY3XCXyVQuMTSwk",
   authDomain: "htg-development.firebaseapp.com",
