@@ -26,9 +26,10 @@ const UserProvider = ({ children }) => {
         console.log("no user");
         setUser(null);
       }
-    });
     //this runs on unmount and matches componentwillunmount
+    });
     return () => {
+      // the unsubscribe function allows us to close the session once the app shuts down
       unsubscribeFromAuth();
     };
   }, 
