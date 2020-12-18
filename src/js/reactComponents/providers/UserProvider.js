@@ -6,7 +6,8 @@ const UserContext = createContext();
 const UserProvider = ({ children }) => {
   const [user, setUser] = useState(null);
 
-  //this matches componentwillmount
+  // this matches componentwillmount
+  // useEffect runs once when a component mounts, when React loads
   useEffect(() => {
     // when a user logs in or out, onAuthStateChanged gets triggered
     // onAuthStateChanged returns an unsubscribe function
@@ -30,7 +31,12 @@ const UserProvider = ({ children }) => {
     return () => {
       unsubscribeFromAuth();
     };
-  }, []);
+  }, 
+  // useEffect requires a second argument 
+  // we will not be using the features the second arg provides in this app
+  // this means useEffect will only run once on mount and not again 
+  // docs on useEffect: https://reactjs.org/docs/hooks-effect.html
+  []);
 
   return <UserContext.Provider value={user}>{children}</UserContext.Provider>;
 };
