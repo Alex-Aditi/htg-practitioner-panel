@@ -16,4 +16,6 @@ firebase.initializeApp(firebaseConfig);
 const firebaseAuth = firebase.auth();
 
 export default firebase;
+// this contains all auth features set up on line 16
+// we will use this in other files to set up auth going forward
 export { firebaseAuth };
