@@ -8,6 +8,8 @@ import firebase from "firebase/app";
 import "firebase/auth";
 import firebaseConfig from "./firebaseConfig";
 
+// this initializes communication to the firebase backend using the values in the firebaseConfig.js file 
+// this means we can use other services without needing to rewrite the config values every time
 firebase.initializeApp(firebaseConfig);
 
 // this only works because we imported auth above on line 8, after importing firebase/app
