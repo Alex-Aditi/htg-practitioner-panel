@@ -10,7 +10,7 @@ const UserProvider = ({ children }) => {
   // useEffect runs once when a component mounts, when React loads
   useEffect(() => {
     // when a user logs in or out, onAuthStateChanged gets triggered
-    // onAuthStateChanged returns an unsubscribe function
+    // onAuthStateChanged returns an unsubscribe function that we need to run on unmount
     const unsubscribeFromAuth = firebaseAuth.onAuthStateChanged((userAuth) => {
       // userAuth is either an object or null
       // it is only null on logout, because there is no longer a user
@@ -26,8 +26,8 @@ const UserProvider = ({ children }) => {
         console.log("no user");
         setUser(null);
       }
-    //this runs on unmount and matches componentwillunmount
     });
+    //this runs on unmount and matches componentwillunmount
     return () => {
       // the unsubscribe function allows us to close the session once the app shuts down
       unsubscribeFromAuth();
